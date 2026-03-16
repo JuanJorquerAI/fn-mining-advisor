@@ -122,21 +122,22 @@
 | DSYS-01, DSYS-02, DSYS-03 | Phase 1 | Pending |
 | SHEL-01, SHEL-02, SHEL-03, SHEL-04 | Phase 1 | Pending |
 | UX-01, UX-02, UX-03 | Phase 1 | Pending |
-| WP-01, WP-02, WP-03, WP-04 | Phase 2 | Pending |
-| WP-05, WP-06, WP-07, WP-08, WP-09 | Phase 2 | Pending |
-| API-01, API-02 | Phase 3 | Pending |
-| API-03, API-04, API-05, API-06 | Phase 3 | Pending |
 | SECT-01, SECT-02, SECT-03, SECT-04, SECT-05, SECT-06, SECT-07 | Phase 1 | Pending |
-| CONT-01, CONT-02, CONT-03, CONT-04, CONT-05 | Phase 4 | Pending |
-| SEO-01, SEO-02, SEO-03, SEO-04, SEO-05 | Phase 5 | Pending |
+| CONT-02, CONT-03, CONT-04, CONT-05 | Phase 1 | Pending |
 | RESP-01, RESP-02, RESP-03, RESP-04 | Phase 1 | Pending |
 | SCAL-01, SCAL-02, SCAL-03 | Phase 1 | Pending |
+| WP-01, WP-02, WP-03, WP-04, WP-05, WP-06, WP-07, WP-08, WP-09 | Phase 2 | Pending |
+| API-01, API-02 | Phase 3 | Pending |
+| API-03, API-04, API-05, API-06, CONT-01 | Phase 4 | Pending |
+| SEO-01, SEO-02, SEO-03, SEO-04, SEO-05 | Phase 5 | Pending |
 
 **Coverage:**
-- v1 requirements: 43 total
-- Mapped to phases: 43
-- Unmapped: 0 ✓
+- v1 requirements: 49 total
+- Mapped to phases: 49
+- Unmapped: 0
+
+**Phase 6 note:** Pre-Launch Hardening carries no new requirements — it is a verification phase that validates all prior phase requirements work end-to-end under production conditions.
 
 ---
 *Requirements defined: 2026-03-16*
-*Last updated: 2026-03-16 after initial definition*
+*Last updated: 2026-03-16 — traceability updated after roadmap creation*
