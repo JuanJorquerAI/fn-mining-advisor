@@ -23,7 +23,7 @@ created: 2026-03-16
 | Component library | none — hand-authored BEM components | STACK.md: BEM for components, CSS custom properties for tokens |
 | Icon library | Phosphor Icons or Heroicons (outline/regular variant, inline SVG) | CONTEXT.md: "iconos técnicos lineales del estilo de Phosphor Icons o Heroicons en variante outline/regular" |
 | Heading font | Cormorant Garamond — weights 400, 600 — Google Fonts | CONTEXT.md canonical refs |
-| Body/UI font | Inter — weights 400, 500 — Google Fonts | CONTEXT.md canonical refs |
+| Body/UI font | Inter — weights 400, 600 — Google Fonts | CONTEXT.md canonical refs; weight 500 dropped in favor of 600 |
 | Font loading | `font-display: swap` mandatory on both font faces | REQUIREMENTS.md SEO-04, CONTEXT.md |
 
 ---
@@ -41,7 +41,7 @@ Declared values (multiples of 4):
 | xl | 32px | Card padding (generous interior); footer columns gap |
 | 2xl | 48px | Sub-section internal spacing; mobile section padding |
 | 3xl | 64px | Mid-section vertical rhythm on tablet |
-| section-mobile | 60px | `padding-block` on all `<section>` at <768px |
+| section-mobile | 64px | `padding-block` on all `<section>` at <768px — CONTEXT.md said "60px mobile"; nearest multiple of 4 is 64px |
 | section-desktop | 96px | `padding-block` on all `<section>` at ≥1024px (midpoint of 80–120px range) |
 
 Exceptions:
@@ -53,22 +53,29 @@ Exceptions:
 
 ## Typography
 
-Two fonts, four roles, two weights each. All sizes in `px` equivalents; implement as `rem` (`16px` base).
+Two fonts, four canonical roles (plus one Display role for the hero), two weights. All sizes in `px` equivalents; implement as `rem` (`16px` base).
+
+### Canonical Type Scale
 
 | Role | Element | Font | Size | Weight | Line Height | Source |
 |------|---------|------|------|--------|-------------|--------|
 | Display | Hero H1 | Cormorant Garamond | `clamp(40px, 5vw, 64px)` | 600 (SemiBold) | 1.1 | CONTEXT.md: "100vh hero" + premium tone |
 | Heading | Section H2 | Cormorant Garamond | `clamp(28px, 3vw, 40px)` | 600 (SemiBold) | 1.2 | Default heading — editorial weight |
-| Sub-heading | Card H3, methodology steps | Cormorant Garamond | 20px | 400 (Regular) | 1.3 | CONTEXT.md: methodology numbers large, Cormorant |
+| Sub-heading | Card H3, methodology step titles | Cormorant Garamond | 20px | 400 (Regular) | 1.3 | CONTEXT.md: methodology numbers large, Cormorant |
 | Body | Paragraphs, card descriptions | Inter | 16px | 400 (Regular) | 1.6 | Readable body; 1.6 for long Spanish paragraphs |
-| Label | Nav links, badges, CTA buttons, "Foco:" tag | Inter | 14px | 500 (Medium) | 1.4 | UI/interactive copy; slightly tighter |
-| Small | Trayectoria tagline, footer legal note | Inter | 12px | 400 (Regular) | 1.5 | Supplementary; never used for primary content |
+| Label | Nav links, badges, CTA buttons, "Foco:" tag | Inter | 14px | 600 (SemiBold) | 1.4 | UI/interactive copy; slightly tighter; weight upgraded from 500 to 600 |
 
-Methodology step numbers (01–05): Cormorant Garamond, 56px, weight 400, color `--color-gold-500` — treated as decorative display numerals, not a heading role.
+Declared weights: **400 (Regular)** and **600 (SemiBold)** — applied across both Cormorant Garamond and Inter. No third weight is declared in the type scale.
 
-Logo typographic treatment:
-- "FN" — Cormorant Garamond, 24px, weight 600, color `--color-gold-500`
-- " Mining Advisor" — Inter, 14px, weight 400, color `--color-white`
+### Presentational Overrides (NOT part of the type scale)
+
+These values are one-off visual treatments scoped to specific components. They do not add new type scale entries.
+
+| Component | Element | Font | Size | Weight | Color | Notes |
+|-----------|---------|------|------|--------|-------|-------|
+| `.methodology-step` | Step numeral (01–05) | Cormorant Garamond | 56px | 400 | `--color-gold-500` | Decorative display numeral — evokes engineering report numbering |
+| `.site-logo` | "FN" initials | Cormorant Garamond | 24px | 600 | `--color-gold-500` | Logo presentational — not a content heading |
+| Mobile nav overlay | Nav links | Cormorant Garamond | 28px | 400 | `--color-white` | Full-screen overlay only — not reused elsewhere |
 
 ---
 
@@ -130,9 +137,9 @@ Source: CONTEXT.md "Ritmo de color entre secciones"
 
 1. Primary CTA button background (text: `--color-carbon` for contrast)
 2. Decorative gold line under each section H2 (3px × 48px, `::after` pseudo-element)
-3. Methodology step numbers (01–05) — large Cormorant numerals
+3. Methodology step numbers (01–05) — large Cormorant numerals (presentational override)
 4. Left border accent on Propuesta de Valor pillar cards (3px `border-left`)
-5. Logo "FN" typographic initials in the header
+5. Logo "FN" typographic initials in the header (presentational override)
 6. Scroll indicator chevron in hero
 7. Hover state: top border on service cards (appears on `:hover`)
 
@@ -162,7 +169,7 @@ Phase 1 introduces these base components (documented as BEM blocks):
 | `.btn--ghost` | transparent | `--color-white` | 1.5px `--color-white` | bg → `rgba(255,255,255,0.1)` |
 | `.btn--ghost-dark` | transparent | `--color-carbon` | 1.5px `--color-carbon` | bg → `rgba(21,24,28,0.08)` |
 
-Sizing: `padding: 12px 28px`, `border-radius: 2px`, `font: Inter 14px weight 500`, `letter-spacing: 0.04em`.
+Sizing: `padding: 12px 28px`, `border-radius: 2px`, `font: Inter 14px weight 600`, `letter-spacing: 0.04em`.
 
 Transition on all interactive elements: `transition: all 0.25s ease`.
 
@@ -181,15 +188,16 @@ Contents order: SVG icon (32px, `--color-carbon`) → H3 (service title) → des
 ### `.section-header`
 
 Reusable header for each section:
-- H2 (Cormorant Garamond, clamp(28px, 3vw, 40px), weight 600)
+- H2 (Cormorant Garamond, `clamp(28px, 3vw, 40px)`, weight 600)
 - `::after` pseudo-element: `display: block; width: 48px; height: 3px; background: --color-gold-500; margin-top: 12px`
-- Optional subheadline paragraph (Inter 16px, secondary text color)
+- Optional subheadline paragraph (Inter 16px weight 400, secondary text color)
 
 ### `.methodology-step`
 
-- Step number: Cormorant Garamond, 56px, weight 400, `--color-gold-500`
-- Step title: Inter, 16px, weight 500
-- Step body: Inter, 16px, weight 400
+Presentational overrides apply here (see Typography section):
+- Step number: Cormorant Garamond, **56px** (presentational override), weight 400, `--color-gold-500`
+- Step title: Inter, 16px, weight 600 (Label role)
+- Step body: Inter, 16px, weight 400 (Body role)
 - Layout: number left/top, content right/below
 - Connector: vertical or horizontal line `1px --color-steel-mid` opacity 0.3
 
@@ -197,8 +205,8 @@ Reusable header for each section:
 
 - Border-left: 3px solid `--color-gold-500`
 - Padding-left: 20px
-- Title: Inter 16px weight 500 (or Cormorant 20px weight 400)
-- Body: Inter 16px weight 400
+- Title: Cormorant Garamond 20px weight 400 (Sub-heading role)
+- Body: Inter 16px weight 400 (Body role)
 
 ### Header
 
@@ -209,7 +217,11 @@ Reusable header for each section:
 
 Transition: `background 0.3s ease, box-shadow 0.3s ease`.
 
-Mobile hamburger: 3-bar icon (24px), `--color-white`. Opens full-screen overlay with `--color-carbon` background, centered links at Cormorant 28px, CTA button centered below links.
+Logo typographic treatment (presentational override — not type scale):
+- "FN" — Cormorant Garamond, **24px**, weight 600, color `--color-gold-500`
+- " Mining Advisor" — Inter, 14px, weight 400, color `--color-white`
+
+Mobile hamburger: 3-bar icon (24px), `--color-white`. Requires `aria-label="Abrir menú"` in closed state; toggle to `aria-label="Cerrar menú"` when open. Opens full-screen overlay with `--color-carbon` background. Nav links in overlay use the mobile nav presentational override: Cormorant Garamond **28px**, weight 400, centered. CTA button centered below links. Animación de apertura: fade-in (`opacity: 0 → 1`) 0.2s ease.
 
 ---
 
@@ -225,7 +237,7 @@ Source: REQUIREMENTS.md UX-01, UX-02, UX-03; CONTEXT.md.
 | Hero scroll indicator | CSS `@keyframes bounce` — `translateY(0 → 6px → 0)` | 1.5s ease-in-out infinite | Pure CSS, no JS |
 | Header solidify | `scroll` event or `IntersectionObserver` on hero — class toggle | 0.3s ease | Detects scroll past hero height |
 | Smooth anchor scroll | `scroll-behavior: smooth` on `html` element + `scroll-margin-top: 72px` on each section | native CSS | 72px = sticky header height |
-| Mobile nav open/close | Class toggle `.nav--open` — CSS `opacity: 0 → 1` + `visibility` | 0.2s ease | fade-in overlay |
+| Mobile nav open/close | Class toggle `.nav--open` — CSS `opacity: 0 → 1` + `visibility` | 0.2s ease | fade-in overlay; toggle `aria-label` on hamburger button |
 
 No parallax, no particle effects, no complex SVG animations (out of scope per requirements).
 
