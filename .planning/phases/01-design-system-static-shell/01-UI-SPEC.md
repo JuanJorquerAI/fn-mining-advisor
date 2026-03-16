@@ -53,7 +53,7 @@ Exceptions:
 
 ## Typography
 
-Two fonts, four canonical roles (plus one Display role for the hero), two weights. All sizes in `px` equivalents; implement as `rem` (`16px` base).
+Two fonts, four canonical roles, two weights. All sizes in `px` equivalents; implement as `rem` (`16px` base).
 
 ### Canonical Type Scale
 
@@ -61,7 +61,6 @@ Two fonts, four canonical roles (plus one Display role for the hero), two weight
 |------|---------|------|------|--------|-------------|--------|
 | Display | Hero H1 | Cormorant Garamond | `clamp(40px, 5vw, 64px)` | 600 (SemiBold) | 1.1 | CONTEXT.md: "100vh hero" + premium tone |
 | Heading | Section H2 | Cormorant Garamond | `clamp(28px, 3vw, 40px)` | 600 (SemiBold) | 1.2 | Default heading — editorial weight |
-| Sub-heading | Card H3, methodology step titles | Cormorant Garamond | 20px | 400 (Regular) | 1.3 | CONTEXT.md: methodology numbers large, Cormorant |
 | Body | Paragraphs, card descriptions | Inter | 16px | 400 (Regular) | 1.6 | Readable body; 1.6 for long Spanish paragraphs |
 | Label | Nav links, badges, CTA buttons, "Foco:" tag | Inter | 14px | 600 (SemiBold) | 1.4 | UI/interactive copy; slightly tighter; weight upgraded from 500 to 600 |
 
@@ -76,6 +75,7 @@ These values are one-off visual treatments scoped to specific components. They d
 | `.methodology-step` | Step numeral (01–05) | Cormorant Garamond | 56px | 400 | `--color-gold-500` | Decorative display numeral — evokes engineering report numbering |
 | `.site-logo` | "FN" initials | Cormorant Garamond | 24px | 600 | `--color-gold-500` | Logo presentational — not a content heading |
 | Mobile nav overlay | Nav links | Cormorant Garamond | 28px | 400 | `--color-white` | Full-screen overlay only — not reused elsewhere |
+| `.service-card` H3, `.trust-pillar` title | Sub-heading | Cormorant Garamond | 20px | 400 | (inherits surface text color) | Scoped to card and pillar titles; not a canonical scale entry |
 
 ---
 
@@ -183,7 +183,7 @@ Transition on all interactive elements: `transition: all 0.25s ease`.
 - Hover: `transform: translateY(-2px)`, shadow `0 6px 20px rgba(0,0,0,0.10)`, `border-top: 2px solid --color-gold-500`
 - Transition: `0.25s ease`
 
-Contents order: SVG icon (32px, `--color-carbon`) → H3 (service title) → description paragraph → "Foco:" label + inline terms.
+Contents order: SVG icon (32px, `--color-carbon`) → H3 (service title, presentational override: Cormorant Garamond 20px weight 400) → description paragraph → "Foco:" label + inline terms.
 
 ### `.section-header`
 
@@ -205,7 +205,7 @@ Presentational overrides apply here (see Typography section):
 
 - Border-left: 3px solid `--color-gold-500`
 - Padding-left: 20px
-- Title: Cormorant Garamond 20px weight 400 (Sub-heading role)
+- Title: Cormorant Garamond 20px weight 400 (presentational override — scoped to this component)
 - Body: Inter 16px weight 400 (Body role)
 
 ### Header
