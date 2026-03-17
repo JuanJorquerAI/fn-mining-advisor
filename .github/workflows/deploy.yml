@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to Hostinger
 
 on:
   push:
@@ -6,33 +6,20 @@ on:
       - master
       - main
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy via rsync over SSH
+        uses: burnett01/rsync-deployments@7.0.1
         with:
-          path: '.'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          switches: -avz --delete --exclude='.git*' --exclude='.planning' --exclude='wp-*' --exclude='wp-admin' --exclude='wp-includes' --exclude='wp-config.php'
+          path: ./
+          remote_path: /home/u549101671/domains/fn-mining-advisor.hostingersite.com/public_html/
+          remote_host: ${{ secrets.SSH_HOST }}
+          remote_port: ${{ secrets.SSH_PORT }}
+          remote_user: ${{ secrets.SSH_USER }}
+          remote_password: ${{ secrets.SSH_PASS }}
