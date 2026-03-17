@@ -16,10 +16,10 @@ jobs:
       - name: Deploy via rsync over SSH
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avz --delete --exclude='.git*' --exclude='.planning' --exclude='wp-*' --exclude='wp-admin' --exclude='wp-includes' --exclude='wp-config.php'
+          switches: -avz --delete --exclude='.git*' --exclude='.planning' --exclude='wp-*' --exclude='wp-admin' --exclude='wp-includes' --exclude='wp-config.php' --exclude='.github'
           path: ./
           remote_path: /home/u549101671/domains/fn-mining-advisor.hostingersite.com/public_html/
           remote_host: ${{ secrets.SSH_HOST }}
           remote_port: ${{ secrets.SSH_PORT }}
           remote_user: ${{ secrets.SSH_USER }}
-          remote_password: ${{ secrets.SSH_PASS }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
