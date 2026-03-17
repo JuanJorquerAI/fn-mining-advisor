@@ -7,9 +7,9 @@
 
 ### Design System
 
-- [ ] **DSYS-01**: Sistema de CSS custom properties define paleta completa (grafito, dorado, blanco cálido, verde petróleo, grises), tipografías (Cormorant Garamond + Inter), spacing, border-radius y sombras
-- [ ] **DSYS-02**: El sistema visual usa tokens flexibles que permiten cambiar nombre de marca (FN → NMC) sin reescribir CSS de layout o componentes
-- [ ] **DSYS-03**: Biblioteca de componentes base documentada: botones (primario/secundario/ghost), cards de servicio, badges, inputs de formulario, sección-header, dividers
+- [x] **DSYS-01**: Sistema de CSS custom properties define paleta completa (grafito, dorado, blanco cálido, verde petróleo, grises), tipografías (Cormorant Garamond + Inter), spacing, border-radius y sombras
+- [x] **DSYS-02**: El sistema visual usa tokens flexibles que permiten cambiar nombre de marca (FN → NMC) sin reescribir CSS de layout o componentes
+- [x] **DSYS-03**: Biblioteca de componentes base documentada: botones (primario/secundario/ghost), cards de servicio, badges, inputs de formulario, sección-header, dividers
 
 ### HTML Shell
 
@@ -80,9 +80,9 @@
 
 ### Escalabilidad
 
-- [ ] **SCAL-01**: Estructura de directorios preparada para secciones futuras: `/pages/blog/`, `/pages/casos-de-exito/`, `/pages/capacitaciones/`
-- [ ] **SCAL-02**: El HTML shell usa `<article>` y `<section>` con IDs semánticos que sirven como anchor links y futuros targets de SPA si se agrega router
-- [ ] **SCAL-03**: Logo integrado con variable CSS `--logo-src` y versiones previstas: principal, simplificada, mobile, favicon — espacio reservado en header para cuando el cliente entregue el SVG
+- [x] **SCAL-01**: Estructura de directorios preparada para secciones futuras: `/pages/blog/`, `/pages/casos-de-exito/`, `/pages/capacitaciones/`
+- [x] **SCAL-02**: El HTML shell usa `<article>` y `<section>` con IDs semánticos que sirven como anchor links y futuros targets de SPA si se agrega router
+- [x] **SCAL-03**: Logo integrado con variable CSS `--logo-src` y versiones previstas: principal, simplificada, mobile, favicon — espacio reservado en header para cuando el cliente entregue el SVG
 
 ## v2 Requirements
 
