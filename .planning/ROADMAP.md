@@ -12,7 +12,7 @@ Build a decoupled corporate landing page for a senior mining/metallurgical consu
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Design System + Static Shell** - Lock the design tokens and build the complete 9-section HTML shell with real static content and full responsive layout
+- [x] **Phase 1: Design System + Static Shell** - Lock the design tokens and build the complete 9-section HTML shell with real static content and full responsive layout (completed 2026-03-17)
 - [ ] **Phase 2: WordPress Backend Setup** - Install, configure, and harden WordPress with ACF field groups, CPTs, CF7, and security hardening (parallel with Phase 1)
 - [ ] **Phase 3: API Integration Layer** - Build the centralized fetch client, endpoint constants, and transform functions against live WordPress endpoints
 - [ ] **Phase 4: Section Integration** - Wire each frontend section to the WordPress REST API with progressive enhancement and contact form submission
@@ -101,7 +101,7 @@ Phase 1 and Phase 2 run in parallel. Phase 3 starts after both complete. Phases 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design System + Static Shell | 4/5 | In Progress|  |
+| 1. Design System + Static Shell | 5/5 | Complete   | 2026-03-17 |
 | 2. WordPress Backend Setup | 0/TBD | Not started | - |
 | 3. API Integration Layer | 0/TBD | Not started | - |
 | 4. Section Integration | 0/TBD | Not started | - |
