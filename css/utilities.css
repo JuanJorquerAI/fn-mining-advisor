@@ -1,0 +1,87 @@
+/* Screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Button base — applies to all .btn variants */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);  /* 2px */
+  font-family: var(--font-body);
+  font-size: var(--text-label);     /* 14px */
+  font-weight: var(--fw-semibold);  /* 600 */
+  letter-spacing: 0.04em;
+  line-height: var(--lh-label);
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  transition: var(--transition-base);
+  min-height: 44px;                 /* RESP-04: touch target minimum */
+  white-space: nowrap;
+}
+
+/* Primary button — gold background, carbon text */
+.btn--primary {
+  background-color: var(--color-gold-500);
+  color: var(--color-carbon);
+  border: none;
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+  background-color: var(--color-gold-300);
+  transform: translateY(-1px);
+}
+
+/* Ghost button — transparent, white border (for dark backgrounds) */
+.btn--ghost {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 1.5px solid var(--color-white);
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus-visible {
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+/* Ghost dark button — transparent, carbon border (for light backgrounds) */
+.btn--ghost-dark {
+  background-color: transparent;
+  color: var(--color-carbon);
+  border: 1.5px solid var(--color-carbon);
+}
+
+.btn--ghost-dark:hover,
+.btn--ghost-dark:focus-visible {
+  background-color: rgba(21, 24, 28, 0.08);
+}
+
+/* Fade-in animation — triggered by IntersectionObserver adding .is-visible */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Visually hidden until JS loads — for progressive enhancement sections */
+.js-only {
+  display: none;
+}

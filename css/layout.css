@@ -1,0 +1,86 @@
+/* Container utility */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-lg);   /* 24px sides on mobile */
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-inline: var(--space-xl);  /* 32px sides on tablet+ */
+  }
+}
+
+/* Section default padding */
+section {
+  padding-block: var(--space-section-mobile);  /* 64px mobile */
+}
+
+@media (min-width: 1024px) {
+  section {
+    padding-block: var(--space-section-desktop); /* 96px desktop */
+  }
+}
+
+/* Section header component (reused across all 9 sections) */
+.section-header {
+  margin-bottom: var(--space-2xl);   /* 48px below header before content */
+}
+
+.section-header h2 {
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-gold-500);
+  margin-top: 12px;
+}
+
+.section-header p {
+  margin-top: var(--space-md);      /* 16px gap after H2+rule */
+  font-size: var(--text-body);
+  line-height: var(--lh-body);
+}
+
+/* Dark section text override */
+.section--dark .section-header p,
+.section--dark p {
+  color: var(--color-steel-mid);
+}
+
+.section--dark .section-header h2,
+.section--dark h2,
+.section--dark h3 {
+  color: var(--color-white);
+}
+
+/* Grid utility — 2 column default, collapses per section-specific CSS */
+.grid-2 {
+  display: grid;
+  gap: var(--space-lg);             /* 24px */
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

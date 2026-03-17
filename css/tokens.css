@@ -1,0 +1,71 @@
+:root {
+  /* === COLORS === */
+  /* Dark surfaces */
+  --color-carbon:        #15181C;
+  --color-steel-dark:    #2A3038;
+  --color-steel-mid:     #5E6873;
+
+  /* Light surfaces */
+  --color-warm-white:    #F5F5F2;
+  --color-light-gray:    #E9ECEF;
+
+  /* Accent */
+  --color-gold-500:      #B88A3B;
+  --color-gold-300:      #D6B15A;
+
+  /* Semantic */
+  --color-petroleum:     #1F4D4A;
+  --color-white:         #FFFFFF;
+
+  /* === TYPOGRAPHY === */
+  --font-heading:        'Cormorant Garamond', Georgia, serif;
+  --font-body:           'Inter', system-ui, sans-serif;
+
+  /* Type scale — implement as rem (16px base) */
+  --text-display:        clamp(2.5rem, 5vw, 4rem);    /* Hero H1: clamp(40px, 5vw, 64px) */
+  --text-heading:        clamp(1.75rem, 3vw, 2.5rem); /* Section H2: clamp(28px, 3vw, 40px) */
+  --text-body:           1rem;                         /* 16px */
+  --text-label:          0.875rem;                     /* 14px */
+
+  /* Line heights */
+  --lh-display:          1.1;
+  --lh-heading:          1.2;
+  --lh-body:             1.6;
+  --lh-label:            1.4;
+
+  /* Font weights */
+  --fw-regular:          400;
+  --fw-semibold:         600;
+
+  /* === SPACING SCALE === */
+  --space-xs:            0.25rem;   /* 4px */
+  --space-sm:            0.5rem;    /* 8px */
+  --space-md:            1rem;      /* 16px */
+  --space-lg:            1.5rem;    /* 24px */
+  --space-xl:            2rem;      /* 32px */
+  --space-2xl:           3rem;      /* 48px */
+  --space-3xl:           4rem;      /* 64px */
+  --space-section-mobile: 4rem;     /* 64px — section padding-block on mobile */
+  --space-section-desktop: 6rem;    /* 96px — section padding-block on desktop */
+
+  /* === LAYOUT === */
+  --container-max:       75rem;     /* 1200px */
+  --header-height:       4.5rem;    /* 72px — used for scroll-margin-top offset */
+
+  /* === BORDERS === */
+  --radius-sm:           2px;       /* Buttons */
+  --radius-md:           4px;       /* Cards */
+
+  /* === SHADOWS === */
+  --shadow-card:         0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover:   0 6px 20px rgba(0, 0, 0, 0.10);
+  --shadow-header:       0 2px 12px rgba(0, 0, 0, 0.40);
+
+  /* === TRANSITIONS === */
+  --transition-base:     all 0.25s ease;
+  --transition-header:   background 0.3s ease, box-shadow 0.3s ease;
+
+  /* === LOGO (rebrand-safe) === */
+  --logo-accent-color:   var(--color-gold-500);
+  --logo-text-color:     var(--color-white);
+}
