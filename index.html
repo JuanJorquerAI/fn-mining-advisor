@@ -79,7 +79,7 @@
          SECTION 1: HERO
          Dark gradient, 100vh, centered content
          ============================================================ -->
-    <section id="hero" class="hero section--dark" aria-labelledby="hero-heading">
+    <section id="hero" class="hero section--dark" aria-labelledby="hero-heading" style="background-image: url('assets/images/hero-bg.jpg');">
       <div class="container hero__container">
         <div class="hero__content fade-in">
           <h1 class="hero__heading" id="hero-heading">
@@ -326,6 +326,11 @@
         </header>
 
         <div class="experiencia-section__content fade-in">
+
+          <div class="experiencia-section__profile">
+            <img src="assets/images/felipe-nunez.jpg" alt="Felipe Armando Nuñez Cordero — Consultor Senior en Minería" class="experiencia-section__portrait" loading="lazy">
+          </div>
+
           <div class="experiencia-section__editorial">
             <p class="experiencia-section__lead">
               Más de dos décadas de trayectoria directa en el sector minero-metalúrgico chileno y latinoamericano, con participación en proyectos de oro, cobre y plata desde la etapa de exploración hasta la producción a escala industrial.
@@ -356,6 +361,22 @@
               <span class="experiencia-hito__value">NI 43-101</span>
               <span class="experiencia-hito__label">Estándar de reporte internacional aplicado</span>
             </div>
+          </div>
+
+          <!-- Galería de proyectos -->
+          <div class="experiencia-section__galeria" aria-label="Proyectos representativos">
+            <figure class="experiencia-galeria__item">
+              <img src="assets/images/proyecto-minero.jpg" alt="Operación minera a cielo abierto — vista aérea" loading="lazy">
+              <figcaption>Operación minera a cielo abierto</figcaption>
+            </figure>
+            <figure class="experiencia-galeria__item">
+              <img src="assets/images/planta-metalurgica.jpg" alt="Planta de procesamiento metalúrgico" loading="lazy">
+              <figcaption>Planta de procesamiento metalúrgico</figcaption>
+            </figure>
+            <figure class="experiencia-galeria__item">
+              <img src="assets/images/laboratorio.jpg" alt="Análisis metalúrgico en laboratorio" loading="lazy">
+              <figcaption>Análisis metalúrgico en laboratorio</figcaption>
+            </figure>
           </div>
 
           <!-- LinkedIn link — CONT-05 -->
@@ -543,7 +564,7 @@
 
       <div class="site-footer__brand">
         <a href="/" class="site-logo site-logo--footer" aria-label="FN Mining Advisor — Inicio">
-          <span class="site-logo__initials">FN</span><span class="site-logo__name"> Mining Advisor</span>
+          <img src="assets/logo-nmc.png" alt="Nuñez Mining Consulting" class="site-logo__img site-logo__img--footer">
         </a>
         <p class="site-footer__tagline">Consultoría técnica senior en minería y metalurgia.</p>
       </div>

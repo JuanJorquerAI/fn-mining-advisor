@@ -10,10 +10,32 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--color-carbon) 0%, var(--color-steel-dark) 100%);
+  background-color: var(--color-carbon);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   overflow: hidden;
   /* Override section default padding for hero (uses full height instead) */
   padding-block: 0;
+}
+
+/* Dark overlay so text remains legible over the background image */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(18,18,18,0.88) 0%, rgba(30,35,45,0.75) 100%);
+  z-index: 0;
+}
+
+.hero .hero__container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero .hero__scroll-indicator {
+  position: absolute;
+  z-index: 1;
 }
 
 /* Adjust padding to avoid header overlap on mobile */

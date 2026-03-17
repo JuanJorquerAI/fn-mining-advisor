@@ -45,6 +45,11 @@
   object-fit: contain;
 }
 
+.site-logo__img--footer {
+  height: 44px;
+  opacity: 0.9;
+}
+
 /* ============================================================
    Desktop navigation
    Hidden on mobile — display flex on desktop (1024px+)
