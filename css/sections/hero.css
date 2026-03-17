@@ -1,0 +1,122 @@
+/* ============================================================
+   Hero section
+   Dark gradient, 100vh desktop, min-height: 100svh mobile,
+   centered content, scroll indicator with CSS bounce animation
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 100svh;            /* min-height: 100svh on mobile prevents content clipping */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-carbon) 0%, var(--color-steel-dark) 100%);
+  overflow: hidden;
+  /* Override section default padding for hero (uses full height instead) */
+  padding-block: 0;
+}
+
+/* Adjust padding to avoid header overlap on mobile */
+@media (max-width: 1023px) {
+  .hero {
+    height: auto;
+    min-height: 100svh;
+    padding-block: calc(var(--header-height) + var(--space-2xl)) var(--space-2xl);
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__content {
+  max-width: 52rem;   /* ~832px — constrains line length for readability */
+}
+
+/* Hero H1 — display scale */
+.hero__heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-display);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-display);
+  color: var(--color-white);
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--space-xl);
+}
+
+/* Gold accent line under H1 — 48px × 3px, centered */
+.hero__heading::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-gold-500);
+  margin: var(--space-md) auto 0;  /* centered below heading */
+}
+
+.hero__subheadline {
+  font-family: var(--font-body);
+  font-size: 1.125rem;  /* 18px — slightly larger than body for hero context */
+  line-height: var(--lh-body);
+  color: var(--color-steel-mid);
+  margin-bottom: var(--space-2xl);
+  max-width: 40rem;
+  margin-inline: auto;
+}
+
+/* CTA row — horizontal flex, collapses on very small mobile */
+.hero__ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-xl);
+}
+
+/* Trayectoria tagline — small text with gold separator line above */
+.hero__trayectoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-label);   /* 14px */
+  font-weight: var(--fw-regular);
+  color: var(--color-steel-mid);
+  letter-spacing: 0.02em;
+}
+
+.hero__trayectoria-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background-color: var(--color-gold-300);
+}
+
+/* ============================================================
+   Scroll indicator — fixed at bottom center of hero
+   Pure CSS bounce animation, no JS required
+   ============================================================ */
+
+.hero__scroll-indicator {
+  position: absolute;
+  bottom: var(--space-xl);
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-gold-500);
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(6px);
+  }
+}

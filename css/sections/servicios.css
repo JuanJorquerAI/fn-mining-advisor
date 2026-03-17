@@ -1,0 +1,82 @@
+/* ============================================================
+   Servicios section
+   Light-gray background, 2×2 card grid (1 col mobile, 2 col tablet+)
+   Service cards with hover lift and gold top-border on hover
+   ============================================================ */
+
+.servicios-section {
+  background-color: var(--color-light-gray);
+}
+
+/* Service cards grid — 1 col mobile, 2 col tablet+ (satisfies RESP-03) */
+.servicios-section__grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .servicios-section__grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 cols tablet — satisfies RESP-03 */
+  }
+}
+
+/* ============================================================
+   Service card component
+   White bg, subtle border/shadow, hover lift + gold top border
+   ============================================================ */
+
+.service-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--radius-md);    /* 4px */
+  box-shadow: var(--shadow-card);
+  padding: var(--space-xl);           /* 32px */
+  transition: var(--transition-base);
+  border-top: 2px solid transparent;  /* Reserves space; gold appears on hover */
+}
+
+.service-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+  border-top-color: var(--color-gold-500);
+}
+
+/* Card icon — 32px, carbon color */
+.service-card__icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-carbon);
+  margin-bottom: var(--space-md);
+}
+
+/* Card H3 title — presentational override: Cormorant 20px weight 400 */
+.service-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;   /* 20px — presentational override per UI-SPEC */
+  font-weight: var(--fw-regular);
+  color: var(--color-carbon);
+  margin-bottom: var(--space-sm);
+  line-height: var(--lh-heading);
+}
+
+/* Card description paragraph */
+.service-card p {
+  font-size: var(--text-body);
+  color: var(--color-steel-mid);
+  line-height: var(--lh-body);
+  margin-bottom: var(--space-md);
+}
+
+/* Foco label — 14px, secondary color */
+.service-card__foco {
+  font-size: var(--text-label);      /* 14px */
+  color: var(--color-steel-mid);
+  line-height: var(--lh-label);
+  margin-bottom: 0;
+}
+
+.service-card__foco strong {
+  color: var(--color-carbon);
+  font-weight: var(--fw-semibold);
+}

@@ -1,0 +1,219 @@
+/* ============================================================
+   Site Header
+   Fixed position, transparent over hero, solid when scrolled.
+   JS in js/header.js adds .header--scrolled when past hero.
+   ============================================================ */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: var(--header-height);   /* 72px */
+  background-color: transparent;
+  transition: var(--transition-header);
+}
+
+/* Scrolled state — added by js/header.js when user scrolls past hero */
+.site-header.header--scrolled {
+  background-color: var(--color-carbon);
+  box-shadow: var(--shadow-header);
+}
+
+.site-header__inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ============================================================
+   Logo — typographic treatment (presentational override)
+   ============================================================ */
+
+.site-logo {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.site-logo__initials {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;    /* 24px — presentational override per UI-SPEC */
+  font-weight: var(--fw-semibold);
+  color: var(--logo-accent-color);  /* rebrand-safe: --color-gold-500 */
+  line-height: 1;
+}
+
+.site-logo__name {
+  font-family: var(--font-body);
+  font-size: var(--text-label);  /* 14px */
+  font-weight: var(--fw-regular);
+  color: var(--logo-text-color);  /* rebrand-safe: --color-white */
+  line-height: 1;
+}
+
+/* ============================================================
+   Desktop navigation
+   Hidden on mobile — display flex on desktop (1024px+)
+   ============================================================ */
+
+.site-nav {
+  display: none;   /* Hidden on mobile — show on desktop */
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 1024px) {
+  .site-nav {
+    display: flex;
+  }
+}
+
+.site-nav__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav__link {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  text-decoration: none;
+  transition: var(--transition-base);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.site-nav__link:hover {
+  color: var(--color-gold-300);
+}
+
+/* CTA in header nav — ghost when transparent, primary when scrolled */
+.site-nav__cta {
+  /* Default: ghost (transparent over hero) — inherits .btn--ghost styles */
+}
+
+.header--scrolled .site-nav__cta {
+  /* When scrolled: switch to primary gold */
+  background-color: var(--color-gold-500);
+  color: var(--color-carbon);
+  border-color: var(--color-gold-500);
+}
+
+.header--scrolled .site-nav__cta:hover {
+  background-color: var(--color-gold-300);
+  border-color: var(--color-gold-300);
+}
+
+/* ============================================================
+   Mobile hamburger button
+   Visible on mobile, hidden on desktop
+   ============================================================ */
+
+.site-nav__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-sm);
+}
+
+@media (min-width: 1024px) {
+  .site-nav__hamburger {
+    display: none;
+  }
+}
+
+.site-nav__hamburger-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--color-white);
+  border-radius: 2px;
+  transition: var(--transition-base);
+}
+
+/* ============================================================
+   Mobile nav overlay
+   Full-screen, carbon bg, fade-in via .nav--open class
+   ============================================================ */
+
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background-color: var(--color-carbon);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.mobile-nav.nav--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile-nav__close {
+  position: absolute;
+  top: var(--space-lg);
+  right: var(--space-lg);
+  background: none;
+  border: none;
+  color: var(--color-white);
+  font-size: 1.5rem;
+  cursor: pointer;
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-nav__list {
+  list-style: none;
+  text-align: center;
+  margin: 0 0 var(--space-2xl) 0;
+  padding: 0;
+}
+
+.mobile-nav__list li + li {
+  margin-top: var(--space-xl);
+}
+
+/* Mobile nav links — presentational override: Cormorant 28px weight 400 */
+.mobile-nav__link {
+  font-family: var(--font-heading);
+  font-size: 1.75rem;   /* 28px — presentational override per UI-SPEC */
+  font-weight: var(--fw-regular);
+  color: var(--color-white);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.mobile-nav__link:hover {
+  color: var(--color-gold-300);
+}
+
+.mobile-nav__cta {
+  margin-top: var(--space-xl);
+}
