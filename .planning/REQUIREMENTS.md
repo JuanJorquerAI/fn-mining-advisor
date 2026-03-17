@@ -13,16 +13,16 @@
 
 ### HTML Shell
 
-- [ ] **SHEL-01**: Estructura HTML semántica completa del home con 9 secciones: Hero, Propuesta de Valor, Servicios, Innovación/Sustentabilidad, Metodología, Experiencia, Insights, CTA Final, Contacto
-- [ ] **SHEL-02**: Cada sección tiene contenido estático HTML hardcodeado como fallback (la página es 100% funcional sin JavaScript)
-- [ ] **SHEL-03**: Header sticky con logo (SVG/PNG del cliente), navegación anchor links a secciones, y botón CTA destacado
+- [x] **SHEL-01**: Estructura HTML semántica completa del home con 9 secciones: Hero, Propuesta de Valor, Servicios, Innovación/Sustentabilidad, Metodología, Experiencia, Insights, CTA Final, Contacto
+- [x] **SHEL-02**: Cada sección tiene contenido estático HTML hardcodeado como fallback (la página es 100% funcional sin JavaScript)
+- [x] **SHEL-03**: Header sticky con logo (SVG/PNG del cliente), navegación anchor links a secciones, y botón CTA destacado
 - [ ] **SHEL-04**: Footer con datos de contacto directos, links de secciones y nota legal básica
 
 ### Animaciones y UX
 
 - [ ] **UX-01**: Animaciones fade-in al scroll vía Intersection Observer API — sin librerías externas
 - [ ] **UX-02**: Hover sutil en cards y botones (transform scale, color transition) — sin animaciones extravagantes
-- [ ] **UX-03**: Navegación anchor con scroll suave (scroll-behavior: smooth) y offset para header sticky
+- [x] **UX-03**: Navegación anchor con scroll suave (scroll-behavior: smooth) y offset para header sticky
 
 ### WordPress Setup
 
@@ -47,8 +47,8 @@
 
 ### Secciones de Contenido
 
-- [ ] **SECT-01**: Sección Servicios con 4 cards: Valorización y Desarrollo de Propiedades Mineras, Optimización de Procesos Metalúrgicos y Operacionales, Clínica Metalúrgica, Capacitación en Procesos Metalúrgicos — cada card tiene título, descripción, foco de negocio y CTA "Consultar por este servicio"
-- [ ] **SECT-02**: Bloque Propuesta de Valor con 4 pilares visuales respondiendo: por qué confiar, qué problemas resuelve, qué diferencia a la consultora, visión de largo plazo
+- [x] **SECT-01**: Sección Servicios con 4 cards: Valorización y Desarrollo de Propiedades Mineras, Optimización de Procesos Metalúrgicos y Operacionales, Clínica Metalúrgica, Capacitación en Procesos Metalúrgicos — cada card tiene título, descripción, foco de negocio y CTA "Consultar por este servicio"
+- [x] **SECT-02**: Bloque Propuesta de Valor con 4 pilares visuales respondiendo: por qué confiar, qué problemas resuelve, qué diferencia a la consultora, visión de largo plazo
 - [ ] **SECT-03**: Bloque Innovación y Sustentabilidad con 4 subpuntos técnicos (no cliché verde): innovación aplicada, optimización energética, buenas prácticas internacionales, reducción de impacto ambiental
 - [ ] **SECT-04**: Sección Metodología con 5 pasos secuenciales: NDA/confidencialidad → recepción de antecedentes → diagnóstico inicial → propuesta técnica y económica → ejecución y acompañamiento
 - [ ] **SECT-05**: Sección Experiencia Profesional con bloque editorial elegante: experiencia en minería de oro y cobre, trayectoria nacional e internacional, criterio técnico senior — estructurada para añadir cifras/hitos futuros
@@ -73,9 +73,9 @@
 
 ### Responsive
 
-- [ ] **RESP-01**: Layout responsive funcional en mobile (320px+), tablet (768px+) y desktop (1024px+) — sin overflow horizontal en ningún breakpoint
-- [ ] **RESP-02**: Menú de navegación mobile con hamburger menu o menú colapsado — accesible y sin JavaScript externo
-- [ ] **RESP-03**: Cards de servicios cambian de grid multi-columna a columna única en mobile
+- [x] **RESP-01**: Layout responsive funcional en mobile (320px+), tablet (768px+) y desktop (1024px+) — sin overflow horizontal en ningún breakpoint
+- [x] **RESP-02**: Menú de navegación mobile con hamburger menu o menú colapsado — accesible y sin JavaScript externo
+- [x] **RESP-03**: Cards de servicios cambian de grid multi-columna a columna única en mobile
 - [ ] **RESP-04**: Formulario de contacto 100% usable en mobile con inputs correctamente dimensionados
 
 ### Escalabilidad
