@@ -1,0 +1,30 @@
+/* CTA Final — dark carbon bg, centered content */
+.cta-final-section {
+  background-color: var(--color-carbon);
+}
+
+.cta-final-section__content {
+  max-width: 44rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.cta-final-section__content h2 {
+  color: var(--color-white);
+  margin-bottom: var(--space-lg);
+}
+
+.cta-final-section__content p {
+  color: var(--color-steel-mid);
+  font-size: var(--text-body);
+  line-height: var(--lh-body);
+  margin-bottom: var(--space-2xl);
+}
+
+.cta-final-section__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}

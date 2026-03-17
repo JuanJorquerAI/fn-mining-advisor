@@ -1,0 +1,38 @@
+/* Insights — light gray bg */
+.insights-section {
+  background-color: var(--color-light-gray);
+}
+
+/* Empty / placeholder state */
+.insights-section__empty {
+  text-align: center;
+  padding-block: var(--space-2xl);
+  max-width: 36rem;
+  margin-inline: auto;
+}
+
+.insights-section__empty-heading {
+  font-family: var(--font-heading);
+  font-size: var(--text-heading);
+  font-weight: var(--fw-semibold);
+  color: var(--color-carbon);
+  margin-bottom: var(--space-md);
+}
+
+.insights-section__empty-body {
+  color: var(--color-steel-mid);
+  line-height: var(--lh-body);
+}
+
+/* Insights grid — revealed by JS in Phase 4 when posts exist */
+.insights-section__grid {
+  display: grid;
+  gap: var(--space-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .insights-section__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

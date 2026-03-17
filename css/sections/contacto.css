@@ -1,0 +1,115 @@
+/* Contacto — light warm-white bg */
+.contacto-section {
+  background-color: var(--color-warm-white);
+}
+
+/* Two-column layout: form left, info right */
+.contacto-section__layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .contacto-section__layout {
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-3xl);
+    align-items: start;
+  }
+}
+
+/* Contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contact-form__label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: var(--fw-semibold);
+  color: var(--color-carbon);
+  letter-spacing: 0.02em;
+}
+
+/* Input and textarea — RESP-04: fully usable on mobile */
+.contact-form__input,
+.contact-form__textarea {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  color: var(--color-carbon);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--radius-sm);
+  padding: 12px var(--space-md);
+  min-height: 44px;           /* RESP-04: touch target minimum */
+  width: 100%;
+  transition: border-color 0.2s ease;
+  outline: none;
+  -webkit-appearance: none;   /* Reset iOS default styling */
+  appearance: none;
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus {
+  border-color: var(--color-gold-500);
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Confidentiality note — CONT-02 */
+.contact-form__confidentiality {
+  font-size: var(--text-label);
+  color: var(--color-steel-mid);
+  font-style: italic;
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+}
+
+/* Status message area (Phase 4) */
+.contact-form__status {
+  font-size: var(--text-body);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+}
+
+/* Direct contact info aside */
+.contacto-section__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  padding-top: var(--space-sm);
+}
+
+.contacto-info-item__label {
+  font-family: var(--font-body);
+  font-size: var(--text-label);
+  font-weight: var(--fw-semibold);
+  color: var(--color-steel-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-xs);
+}
+
+.contacto-info-item__value {
+  font-size: var(--text-body);
+  color: var(--color-carbon);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.contacto-info-item__value:hover {
+  color: var(--color-gold-500);
+}

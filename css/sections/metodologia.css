@@ -1,0 +1,79 @@
+/* Metodología — dark carbon bg, 5-step sequential list */
+.metodologia-section {
+  background-color: var(--color-carbon);
+}
+
+.metodologia-section__steps {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  counter-reset: step-counter;
+  position: relative;
+}
+
+/* Vertical connector line between steps */
+.metodologia-section__steps::before {
+  content: '';
+  position: absolute;
+  left: 1.75rem;      /* Aligns with center of numeral column */
+  top: 3.5rem;
+  bottom: 3.5rem;
+  width: 1px;
+  background-color: var(--color-steel-mid);
+  opacity: 0.3;
+}
+
+@media (min-width: 1024px) {
+  .metodologia-section__steps::before {
+    left: 2rem;
+  }
+}
+
+/* Individual step */
+.methodology-step {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: var(--space-xl);
+  padding-block: var(--space-xl);
+  align-items: start;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .methodology-step {
+    grid-template-columns: 5rem 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+/* Step number — large Cormorant Garamond decorative numeral */
+.methodology-step__number {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;    /* 56px — presentational override per UI-SPEC */
+  font-weight: var(--fw-regular);
+  color: var(--color-gold-500);
+  line-height: 1;
+  text-align: center;
+  /* White circle bg to occlude the connector line */
+  background-color: var(--color-carbon);
+  position: relative;
+  z-index: 1;
+  padding-block: var(--space-xs);
+}
+
+/* Step title and body */
+.methodology-step__content h3 {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+  padding-top: var(--space-md);   /* Align with top of numeral visually */
+}
+
+.methodology-step__content p {
+  color: var(--color-steel-mid);
+  font-size: var(--text-body);
+  line-height: var(--lh-body);
+}

@@ -1,0 +1,21 @@
+/* Innovación y Sustentabilidad — dark carbon bg */
+.innovacion-section {
+  background-color: var(--color-carbon);
+}
+
+.innovacion-section__grid {
+  /* Inherits .grid-2 from layout.css */
+}
+
+.innovacion-item h3 {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: var(--fw-regular);
+  color: var(--color-white);
+  margin-bottom: var(--space-sm);
+}
+
+.innovacion-item p {
+  color: var(--color-steel-mid);
+  line-height: var(--lh-body);
+}
