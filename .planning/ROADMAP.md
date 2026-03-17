@@ -101,7 +101,7 @@ Phase 1 and Phase 2 run in parallel. Phase 3 starts after both complete. Phases 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design System + Static Shell | 2/5 | In Progress|  |
+| 1. Design System + Static Shell | 3/5 | In Progress|  |
 | 2. WordPress Backend Setup | 0/TBD | Not started | - |
 | 3. API Integration Layer | 0/TBD | Not started | - |
 | 4. Section Integration | 0/TBD | Not started | - |

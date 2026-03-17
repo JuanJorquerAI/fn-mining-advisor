@@ -16,7 +16,7 @@
 - [x] **SHEL-01**: Estructura HTML semántica completa del home con 9 secciones: Hero, Propuesta de Valor, Servicios, Innovación/Sustentabilidad, Metodología, Experiencia, Insights, CTA Final, Contacto
 - [x] **SHEL-02**: Cada sección tiene contenido estático HTML hardcodeado como fallback (la página es 100% funcional sin JavaScript)
 - [x] **SHEL-03**: Header sticky con logo (SVG/PNG del cliente), navegación anchor links a secciones, y botón CTA destacado
-- [ ] **SHEL-04**: Footer con datos de contacto directos, links de secciones y nota legal básica
+- [x] **SHEL-04**: Footer con datos de contacto directos, links de secciones y nota legal básica
 
 ### Animaciones y UX
 
@@ -49,19 +49,19 @@
 
 - [x] **SECT-01**: Sección Servicios con 4 cards: Valorización y Desarrollo de Propiedades Mineras, Optimización de Procesos Metalúrgicos y Operacionales, Clínica Metalúrgica, Capacitación en Procesos Metalúrgicos — cada card tiene título, descripción, foco de negocio y CTA "Consultar por este servicio"
 - [x] **SECT-02**: Bloque Propuesta de Valor con 4 pilares visuales respondiendo: por qué confiar, qué problemas resuelve, qué diferencia a la consultora, visión de largo plazo
-- [ ] **SECT-03**: Bloque Innovación y Sustentabilidad con 4 subpuntos técnicos (no cliché verde): innovación aplicada, optimización energética, buenas prácticas internacionales, reducción de impacto ambiental
-- [ ] **SECT-04**: Sección Metodología con 5 pasos secuenciales: NDA/confidencialidad → recepción de antecedentes → diagnóstico inicial → propuesta técnica y económica → ejecución y acompañamiento
-- [ ] **SECT-05**: Sección Experiencia Profesional con bloque editorial elegante: experiencia en minería de oro y cobre, trayectoria nacional e internacional, criterio técnico senior — estructurada para añadir cifras/hitos futuros
-- [ ] **SECT-06**: Sección Insights preparada para artículos futuros — muestra cards placeholder y consume CPT "Insights" desde WP API cuando hay contenido
-- [ ] **SECT-07**: CTA Final con mensaje de conversión orientado a diagnóstico inicial, CTA principal (formulario) y CTA secundario (WhatsApp)
+- [x] **SECT-03**: Bloque Innovación y Sustentabilidad con 4 subpuntos técnicos (no cliché verde): innovación aplicada, optimización energética, buenas prácticas internacionales, reducción de impacto ambiental
+- [x] **SECT-04**: Sección Metodología con 5 pasos secuenciales: NDA/confidencialidad → recepción de antecedentes → diagnóstico inicial → propuesta técnica y económica → ejecución y acompañamiento
+- [x] **SECT-05**: Sección Experiencia Profesional con bloque editorial elegante: experiencia en minería de oro y cobre, trayectoria nacional e internacional, criterio técnico senior — estructurada para añadir cifras/hitos futuros
+- [x] **SECT-06**: Sección Insights preparada para artículos futuros — muestra cards placeholder y consume CPT "Insights" desde WP API cuando hay contenido
+- [x] **SECT-07**: CTA Final con mensaje de conversión orientado a diagnóstico inicial, CTA principal (formulario) y CTA secundario (WhatsApp)
 
 ### Contacto
 
 - [ ] **CONT-01**: Formulario de contacto con campos: nombre, empresa, email, teléfono, mensaje — enviado vía CF7 REST API con feedback visual (éxito/error)
-- [ ] **CONT-02**: Nota de confidencialidad visible junto al formulario ("Sus datos y consulta son tratados con estricta confidencialidad")
-- [ ] **CONT-03**: Botón/enlace de WhatsApp en sección CTA Final y en la sección de contacto
-- [ ] **CONT-04**: Email de contacto directo visible en la sección de contacto
-- [ ] **CONT-05**: Enlace a perfil LinkedIn del consultor en footer y/o sección de experiencia
+- [x] **CONT-02**: Nota de confidencialidad visible junto al formulario ("Sus datos y consulta son tratados con estricta confidencialidad")
+- [x] **CONT-03**: Botón/enlace de WhatsApp en sección CTA Final y en la sección de contacto
+- [x] **CONT-04**: Email de contacto directo visible en la sección de contacto
+- [x] **CONT-05**: Enlace a perfil LinkedIn del consultor en footer y/o sección de experiencia
 
 ### SEO y Performance
 
@@ -76,7 +76,7 @@
 - [x] **RESP-01**: Layout responsive funcional en mobile (320px+), tablet (768px+) y desktop (1024px+) — sin overflow horizontal en ningún breakpoint
 - [x] **RESP-02**: Menú de navegación mobile con hamburger menu o menú colapsado — accesible y sin JavaScript externo
 - [x] **RESP-03**: Cards de servicios cambian de grid multi-columna a columna única en mobile
-- [ ] **RESP-04**: Formulario de contacto 100% usable en mobile con inputs correctamente dimensionados
+- [x] **RESP-04**: Formulario de contacto 100% usable en mobile con inputs correctamente dimensionados
 
 ### Escalabilidad
 
