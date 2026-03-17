@@ -20,8 +20,8 @@
 
 ### Animaciones y UX
 
-- [ ] **UX-01**: Animaciones fade-in al scroll vía Intersection Observer API — sin librerías externas
-- [ ] **UX-02**: Hover sutil en cards y botones (transform scale, color transition) — sin animaciones extravagantes
+- [x] **UX-01**: Animaciones fade-in al scroll vía Intersection Observer API — sin librerías externas
+- [x] **UX-02**: Hover sutil en cards y botones (transform scale, color transition) — sin animaciones extravagantes
 - [x] **UX-03**: Navegación anchor con scroll suave (scroll-behavior: smooth) y offset para header sticky
 
 ### WordPress Setup
