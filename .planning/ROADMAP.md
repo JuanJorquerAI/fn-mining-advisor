@@ -31,7 +31,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The page renders without horizontal overflow at 320px, 768px, and 1024px viewport widths; the services grid collapses to a single column on mobile
   4. Cards and buttons respond to hover with the defined scale/color transitions; sections fade in on scroll via Intersection Observer with no external libraries
   5. The directory structure includes `/pages/blog/`, `/pages/casos-de-exito/`, and `/pages/capacitaciones/` scaffolding; all section IDs serve as working anchor links
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — CSS design tokens, base styles, layout helpers, directory scaffold
+- [ ] 01-02-PLAN.md — index.html skeleton with header, Hero, Propuesta de Valor, Servicios sections + CSS
+- [ ] 01-03-PLAN.md — Remaining 6 sections (Innovación–Contacto) + footer HTML and CSS
+- [ ] 01-04-PLAN.md — JavaScript modules: header scroll behavior, mobile nav, scroll animations
+- [ ] 01-05-PLAN.md — Human verification checkpoint: all 5 Phase 1 success criteria
 
 ### Phase 2: WordPress Backend Setup
 **Goal**: A secured WordPress installation is live with all ACF field groups, custom post types, contact form, and plugins configured — ready to serve real API responses
@@ -94,7 +101,7 @@ Phase 1 and Phase 2 run in parallel. Phase 3 starts after both complete. Phases 
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Design System + Static Shell | 0/TBD | Not started | - |
+| 1. Design System + Static Shell | 0/5 | Not started | - |
 | 2. WordPress Backend Setup | 0/TBD | Not started | - |
 | 3. API Integration Layer | 0/TBD | Not started | - |
 | 4. Section Integration | 0/TBD | Not started | - |
