@@ -29,31 +29,20 @@
 }
 
 /* ============================================================
-   Logo — typographic treatment (presentational override)
+   Logo — imagen
    ============================================================ */
 
 .site-logo {
   display: flex;
-  align-items: baseline;
-  gap: 0;
+  align-items: center;
   text-decoration: none;
   line-height: 1;
 }
 
-.site-logo__initials {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;    /* 24px — presentational override per UI-SPEC */
-  font-weight: var(--fw-semibold);
-  color: var(--logo-accent-color);  /* rebrand-safe: --color-gold-500 */
-  line-height: 1;
-}
-
-.site-logo__name {
-  font-family: var(--font-body);
-  font-size: var(--text-label);  /* 14px */
-  font-weight: var(--fw-regular);
-  color: var(--logo-text-color);  /* rebrand-safe: --color-white */
-  line-height: 1;
+.site-logo__img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
 }
 
 /* ============================================================
