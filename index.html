@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consultoría especializada en valorización de propiedades, optimización metalúrgica y gestión de proyectos mineros en Chile y Latinoamérica.">
+
+  <title>FN Mining Advisor — Consultoría Técnica Senior en Minería y Metalurgia</title>
+
+  <!-- Design tokens load first — all other CSS depends on these variables -->
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/utilities.css">
+
+  <!-- Section CSS -->
+  <link rel="stylesheet" href="css/sections/hero.css">
+  <link rel="stylesheet" href="css/sections/valor.css">
+  <link rel="stylesheet" href="css/sections/servicios.css">
+  <link rel="stylesheet" href="css/sections/innovacion.css">
+  <link rel="stylesheet" href="css/sections/metodologia.css">
+  <link rel="stylesheet" href="css/sections/experiencia.css">
+  <link rel="stylesheet" href="css/sections/insights.css">
+  <link rel="stylesheet" href="css/sections/cta-final.css">
+  <link rel="stylesheet" href="css/sections/contacto.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER — sticky, transparent over hero, solid on scroll
+       JS in js/header.js adds .header--scrolled when past hero
+       ============================================================ -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="container site-header__inner">
+
+      <!-- Logo — typographic placeholder; replace outer <a> content with <img> when client delivers SVG -->
+      <a href="/" class="site-logo" aria-label="FN Mining Advisor — Inicio">
+        <span class="site-logo__initials">FN</span><span class="site-logo__name"> Mining Advisor</span>
+      </a>
+
+      <!-- Desktop navigation -->
+      <nav class="site-nav" role="navigation" aria-label="Navegación principal">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#servicios" class="site-nav__link">Servicios</a></li>
+          <li><a href="#metodologia" class="site-nav__link">Metodología</a></li>
+          <li><a href="#experiencia" class="site-nav__link">Experiencia</a></li>
+          <li><a href="#contacto" class="site-nav__link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn--ghost site-nav__cta">Solicitar diagnóstico</a>
+      </nav>
+
+      <!-- Mobile hamburger button -->
+      <button class="site-nav__hamburger" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="site-nav__hamburger-bar"></span>
+        <span class="site-nav__hamburger-bar"></span>
+        <span class="site-nav__hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay — shown/hidden by js/header.js via .nav--open class -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Menú de navegación">
+    <button class="mobile-nav__close" id="nav-close" aria-label="Cerrar menú">&#10005;</button>
+    <nav aria-label="Navegación móvil">
+      <ul class="mobile-nav__list" role="list">
+        <li><a href="#servicios" class="mobile-nav__link">Servicios</a></li>
+        <li><a href="#metodologia" class="mobile-nav__link">Metodología</a></li>
+        <li><a href="#experiencia" class="mobile-nav__link">Experiencia</a></li>
+        <li><a href="#contacto" class="mobile-nav__link">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn--primary mobile-nav__cta">Solicitar diagnóstico</a>
+    </nav>
+  </div>
+
+  <main id="main-content">
+
+    <!-- ============================================================
+         SECTION 1: HERO
+         Dark gradient, 100vh, centered content
+         ============================================================ -->
+    <section id="hero" class="hero section--dark" aria-labelledby="hero-heading">
+      <div class="container hero__container">
+        <div class="hero__content fade-in">
+          <h1 class="hero__heading" id="hero-heading">
+            Criterio técnico senior para decisiones mineras críticas
+          </h1>
+          <p class="hero__subheadline">
+            Consultoría especializada en valorización de propiedades, optimización metalúrgica
+            y gestión de proyectos mineros en Chile y Latinoamérica.
+          </p>
+          <div class="hero__ctas">
+            <a href="#contacto" class="btn btn--primary">Solicitar diagnóstico</a>
+            <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+          </div>
+          <p class="hero__trayectoria">
+            <span class="hero__trayectoria-line" aria-hidden="true"></span>
+            +20 años de experiencia en minería de oro y cobre, Chile y Latinoamérica
+          </p>
+        </div>
+      </div>
+      <!-- Scroll indicator -->
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 2: PROPUESTA DE VALOR
+         Light warm-white bg, 4 trust pillars with gold left-border
+         ============================================================ -->
+    <section id="valor" class="valor-section" aria-labelledby="valor-heading">
+      <div class="container">
+        <header class="section-header fade-in">
+          <h2 id="valor-heading">Por qué confiar en nuestra consultoría</h2>
+          <p>Criterio técnico respaldado por experiencia en proyectos de alto impacto en minería de metales y metalurgia extractiva.</p>
+        </header>
+
+        <div class="valor-section__grid grid-2 fade-in">
+
+          <article class="trust-pillar" aria-labelledby="pilar-1-title">
+            <h3 id="pilar-1-title">Experiencia técnica verificable</h3>
+            <p>Más de dos décadas de trabajo directo en plantas metalúrgicas, proyectos de exploración y estudios de factibilidad NI 43-101 en Chile, Perú y México. Cada recomendación proviene de experiencia de campo, no de teoría académica.</p>
+          </article>
+
+          <article class="trust-pillar" aria-labelledby="pilar-2-title">
+            <h3 id="pilar-2-title">Diagnóstico sin compromisos previos</h3>
+            <p>La relación comienza con un diagnóstico inicial estructurado: revisamos los antecedentes técnicos bajo NDA estricto y entregamos una primera evaluación de viabilidad antes de formalizar cualquier compromiso económico.</p>
+          </article>
+
+          <article class="trust-pillar" aria-labelledby="pilar-3-title">
+            <h3 id="pilar-3-title">Independencia y criterio propio</h3>
+            <p>No representamos tecnologías ni proveedores. Nuestra recomendación técnica es independiente: evaluamos la solución óptima para cada proyecto, no la más conveniente comercialmente para terceros.</p>
+          </article>
+
+          <article class="trust-pillar" aria-labelledby="pilar-4-title">
+            <h3 id="pilar-4-title">Visión de largo plazo en minería responsable</h3>
+            <p>Integramos criterios de sustentabilidad operacional y optimización energética en cada evaluación. Un proyecto técnicamente sólido también considera eficiencia, impacto ambiental y viabilidad de largo plazo.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: SERVICIOS
+         Light gray bg, 2×2 grid, service cards with SVG icons
+         ============================================================ -->
+    <section id="servicios" class="servicios-section" aria-labelledby="servicios-heading">
+      <div class="container">
+        <header class="section-header fade-in">
+          <h2 id="servicios-heading">Servicios de consultoría</h2>
+          <p>Soluciones técnicas especializadas para cada etapa del ciclo minero — desde la evaluación inicial hasta la optimización operacional.</p>
+        </header>
+
+        <div class="servicios-section__grid fade-in">
+
+          <!-- Card 1: Valorización y Desarrollo de Propiedades -->
+          <article class="service-card" aria-labelledby="servicio-1-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <!-- Phosphor Icon: Mountains (property evaluation context) -->
+              <svg width="32" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M234.29,213.39,162.57,80.17a40,40,0,0,0-69.14,0L21.71,213.39A16,16,0,0,0,35.64,237.5H220.36A16,16,0,0,0,234.29,213.39ZM128,96l18.39,32H109.61Zm-88,125.5L80,144.24l33.42,58.07a8,8,0,0,0,13.86-8L110.85,168h34.3l-16.43,26.32a8,8,0,0,0,13.86,8L176,144.24l40,77.26Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 id="servicio-1-title">Valorización y Desarrollo de Propiedades Mineras</h3>
+            <p>Evaluación técnica integral de propiedades mineras para decisiones de inversión, adquisición o desinversión — con metodología NI 43-101 y estándares CRIRSCO.</p>
+            <p class="service-card__foco">
+              <strong>Foco:</strong> Evaluación técnica · Diagnóstico de pertenencias · Valorización · Estudios de prefactibilidad
+            </p>
+          </article>
+
+          <!-- Card 2: Optimización de Procesos Metalúrgicos -->
+          <article class="service-card" aria-labelledby="servicio-2-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <!-- Phosphor Icon: Gear / Process (metallurgical process context) -->
+              <svg width="32" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M237.94,107.21a8,8,0,0,0-3.89-5.4l-32.86-19-3.91-32.17a8,8,0,0,0-4.7-6.28L160,30.05a8,8,0,0,0-7.5.38L128,43.94l-24.5-13.51a8,8,0,0,0-7.5-.38L58.42,44.37a8,8,0,0,0-4.7,6.28l-3.91,32.17-32.86,19a8,8,0,0,0-3.89,5.4l-6.83,33.91a8,8,0,0,0,1.83,6.9l21.67,23.43-3.23,32.53a8,8,0,0,0,3.23,7.49l28.37,20.24a8,8,0,0,0,7.86.64l30.81-14.25L128,213.86l32.21,14.25a8,8,0,0,0,7.86-.64l28.37-20.24a8,8,0,0,0,3.23-7.49L196.44,167l21.67-23.43a8,8,0,0,0,1.83-6.9ZM128,168a40,40,0,1,1,40-40A40,40,0,0,1,128,168Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 id="servicio-2-title">Optimización de Procesos Metalúrgicos y Operacionales</h3>
+            <p>Diagnóstico y mejora de eficiencia en circuitos de conminución, flotación, lixiviación y precipitación — orientado a maximizar recuperación metalúrgica y reducir consumos unitarios.</p>
+            <p class="service-card__foco">
+              <strong>Foco:</strong> Conminución · Flotación · Lixiviación · Recuperación metalúrgica · Consumo de reactivos
+            </p>
+          </article>
+
+          <!-- Card 3: Clínica Metalúrgica -->
+          <article class="service-card" aria-labelledby="servicio-3-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <!-- Phosphor Icon: Microscope / Lab (clinic context) -->
+              <svg width="32" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M224,216H208V152a8,8,0,0,0-8-8H168V104a8,8,0,0,0-8-8H136V72h16a8,8,0,0,0,5.66-13.66l-40-40a8,8,0,0,0-11.32,0l-40,40A8,8,0,0,0,72,72H88V96H64a8,8,0,0,0-8,8v40H32a8,8,0,0,0-8,8v64H8a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16ZM88,216H40V160H88Zm72,0H104V112H160Zm16-96h16v96H176Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 id="servicio-3-title">Clínica Metalúrgica</h3>
+            <p>Intervención diagnóstica en planta para identificar cuellos de botella, variabilidades mineralógicas y oportunidades de mejora en el corto plazo — sin paralizar operaciones.</p>
+            <p class="service-card__foco">
+              <strong>Foco:</strong> Diagnóstico en planta · Balance metalúrgico · Mineralogía aplicada · Quick wins operacionales
+            </p>
+          </article>
+
+          <!-- Card 4: Capacitación en Procesos Metalúrgicos -->
+          <article class="service-card" aria-labelledby="servicio-4-title">
+            <div class="service-card__icon" aria-hidden="true">
+              <!-- Phosphor Icon: Graduation Cap (training context) -->
+              <svg width="32" height="32" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87V176a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V117.87l16-8.81V208a8,8,0,0,0,16,0V96A8,8,0,0,0,251.76,88.94ZM208,168H48V127.47l72,39.59a8,8,0,0,0,7.52,0l80-44v45ZM128,151.06,32,98.94,128,46.94l96,52Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 id="servicio-4-title">Capacitación en Procesos Metalúrgicos</h3>
+            <p>Programas de formación técnica para equipos de planta, supervisión y gestión — diseñados con casos reales de operaciones chilenas y latinoamericanas en minería de metales preciosos y base.</p>
+            <p class="service-card__foco">
+              <strong>Foco:</strong> Formación técnica in-situ · Fundamentos de flotación · Hidrometalurgia · Gestión de calidad metalúrgica
+            </p>
+          </article>
+
+        </div><!-- /.servicios-section__grid -->
+      </div><!-- /.container -->
+    </section>
+
+    <!-- SECTIONS-CONTINUE: Plan 03 inserts #innovacion, #metodologia, #experiencia, #insights, #cta-final, #contacto here -->
+
+  </main>
+
+  <!-- Footer placeholder — completed in Plan 03 -->
+  <footer class="site-footer" role="contentinfo">
+    <!-- Footer content inserted by Plan 03 -->
+  </footer>
+
+  <!-- JavaScript — loaded at end of body for progressive enhancement -->
+  <!-- JS files added by Plan 04 -->
+
+</body>
+</html>
