@@ -1,7 +1,8 @@
 ---
 phase: 2
 slug: wordpress-backend-setup
-status: draft
+status: approved
+reviewed_at: 2026-03-18T00:00:00Z
 shadcn_initialized: false
 preset: none
 created: 2026-03-18
