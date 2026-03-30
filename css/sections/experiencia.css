@@ -63,6 +63,10 @@
 
 .experiencia-section__linkedin {
   padding-top: var(--space-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  align-items: center;
 }
 
 /* Retrato */
