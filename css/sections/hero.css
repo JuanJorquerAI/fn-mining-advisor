@@ -97,6 +97,35 @@
   margin-inline: auto;
 }
 
+/* Pain-point questions list */
+.hero__pain-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  max-width: 36rem;
+  text-align: left;
+}
+
+.hero__pain-points li {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: var(--lh-body);
+  color: var(--color-warm-white);
+  padding-left: var(--space-lg);
+  position: relative;
+}
+
+.hero__pain-points li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold-500);
+  font-weight: var(--fw-semibold);
+}
+
 /* CTA row — horizontal flex, collapses on very small mobile */
 .hero__ctas {
   display: flex;
