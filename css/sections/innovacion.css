@@ -1,6 +1,11 @@
-/* Innovación y Sustentabilidad — dark carbon bg */
+/* Innovación y Sustentabilidad — dark bg with image overlay */
 .innovacion-section {
   background-color: var(--color-carbon);
+  background-image:
+    linear-gradient(rgba(21, 24, 28, 0.88), rgba(21, 24, 28, 0.88)),
+    url('../../assets/images/planta-chancado-interior.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .innovacion-section__grid {

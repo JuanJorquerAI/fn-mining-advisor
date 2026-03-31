@@ -1,6 +1,11 @@
-/* CTA Final — dark carbon bg, centered content */
+/* CTA Final — dark bg with image overlay, most dramatic section */
 .cta-final-section {
   background-color: var(--color-carbon);
+  background-image:
+    linear-gradient(rgba(21, 24, 28, 0.78), rgba(21, 24, 28, 0.78)),
+    url('../../assets/images/planta-minera-atardecer.png');
+  background-size: cover;
+  background-position: center 60%;
 }
 
 .cta-final-section__content {

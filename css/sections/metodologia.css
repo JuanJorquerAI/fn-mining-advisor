@@ -1,6 +1,11 @@
-/* Metodología — dark carbon bg, 5-step sequential list */
+/* Metodología — dark bg with image overlay */
 .metodologia-section {
   background-color: var(--color-carbon);
+  background-image:
+    linear-gradient(rgba(21, 24, 28, 0.84), rgba(21, 24, 28, 0.84)),
+    url('../../assets/images/rajo-abierto.png');
+  background-size: cover;
+  background-position: center 35%;
 }
 
 .metodologia-section__steps {
@@ -20,8 +25,8 @@
   top: 3.5rem;
   bottom: 3.5rem;
   width: 1px;
-  background-color: var(--color-steel-mid);
-  opacity: 0.3;
+  background-color: var(--color-gold-500);
+  opacity: 0.25;
 }
 
 @media (min-width: 1024px) {
@@ -55,8 +60,8 @@
   color: var(--color-gold-500);
   line-height: 1;
   text-align: center;
-  /* White circle bg to occlude the connector line */
-  background-color: var(--color-carbon);
+  /* Transparent — no solid block on image bg */
+  background-color: transparent;
   position: relative;
   z-index: 1;
   padding-block: var(--space-xs);
