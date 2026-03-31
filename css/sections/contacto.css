@@ -113,3 +113,10 @@
 .contacto-info-item__value:hover {
   color: var(--color-gold-500);
 }
+
+.contacto-info-item__value--secondary {
+  display: block;
+  font-size: var(--text-label);
+  color: var(--color-steel-mid);
+  margin-top: var(--space-xs);
+}
