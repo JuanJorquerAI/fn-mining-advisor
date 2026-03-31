@@ -14,19 +14,37 @@
 
 /* ============================================================
    Trust pillar component
-   Gold left-border accent, Cormorant heading (presentational)
+   Icon + Gold left-border accent, Cormorant heading
    ============================================================ */
 
 .trust-pillar {
   border-left: 3px solid var(--color-gold-500);
-  padding-left: var(--space-xl);  /* 32px — slightly more than UI-SPEC spec for visual balance */
+  padding-left: var(--space-xl);  /* 32px */
 }
 
-/* Trust pillar title — presentational override: Cormorant 20px weight 400 */
+/* Gold icon container above pillar heading */
+.trust-pillar__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(184, 138, 59, 0.08);
+  border-radius: 10px;
+  color: var(--color-gold-500);
+  margin-bottom: var(--space-md);
+}
+
+.trust-pillar__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Trust pillar title — presentational override: Cormorant 20px weight 600 */
 .trust-pillar h3 {
   font-family: var(--font-heading);
-  font-size: 1.25rem;   /* 20px — presentational override per UI-SPEC */
-  font-weight: var(--fw-regular);
+  font-size: 1.25rem;   /* 20px */
+  font-weight: var(--fw-semibold);
   color: var(--color-carbon);
   margin-bottom: var(--space-sm);
 }
