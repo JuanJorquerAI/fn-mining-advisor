@@ -1,38 +1,46 @@
-/* Insights — light gray bg */
-.insights-section {
-  background-color: var(--color-light-gray);
+/* Cifras clave — dark bg with image overlay */
+.cifras-section {
+  background-color: var(--color-carbon);
+  background-image:
+    linear-gradient(rgba(21, 24, 28, 0.82), rgba(21, 24, 28, 0.82)),
+    url('../../assets/images/oro-laboratorio.png');
+  background-size: cover;
+  background-position: center;
 }
 
-/* Empty / placeholder state */
-.insights-section__empty {
-  text-align: center;
-  padding-block: var(--space-2xl);
-  max-width: 36rem;
-  margin-inline: auto;
-}
-
-.insights-section__empty-heading {
-  font-family: var(--font-heading);
-  font-size: var(--text-heading);
-  font-weight: var(--fw-semibold);
-  color: var(--color-carbon);
-  margin-bottom: var(--space-md);
-}
-
-.insights-section__empty-body {
-  color: var(--color-steel-mid);
-  line-height: var(--lh-body);
-}
-
-/* Insights grid — revealed by JS in Phase 4 when posts exist */
-.insights-section__grid {
+.cifras-section__grid {
   display: grid;
-  gap: var(--space-lg);
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
 }
 
 @media (min-width: 768px) {
-  .insights-section__grid {
-    grid-template-columns: repeat(3, 1fr);
+  .cifras-section__grid {
+    grid-template-columns: repeat(4, 1fr);
   }
+}
+
+.cifra-item {
+  text-align: center;
+  padding: var(--space-xl) var(--space-md);
+  border: 1px solid rgba(184, 138, 59, 0.25);
+  border-radius: var(--radius-md);
+}
+
+.cifra-item__value {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: var(--fw-regular);
+  color: var(--color-gold-300);
+  line-height: 1;
+  margin-bottom: var(--space-sm);
+}
+
+.cifra-item__label {
+  display: block;
+  font-size: var(--text-label);
+  color: rgba(255, 255, 255, 0.65);
+  line-height: var(--lh-label);
 }
