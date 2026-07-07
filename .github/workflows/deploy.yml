@@ -16,7 +16,7 @@ jobs:
       - name: Deploy via rsync over SSH
         uses: burnett01/rsync-deployments@7.0.1
         with:
-          switches: -avz --delete --exclude='.git*' --exclude='.planning' --exclude='wp-*' --exclude='wp-admin' --exclude='wp-includes' --exclude='wp-config.php' --exclude='.github'
+          switches: -avz --delete --exclude='.git*' --exclude='.planning' --exclude='wp-*' --exclude='wp-admin' --exclude='wp-includes' --exclude='wp-config.php' --exclude='.github' --exclude='index.php' --exclude='xmlrpc.php' --exclude='license.txt' --exclude='readme.html'
           path: ./
           remote_path: /home/u549101671/domains/nminingc.cl/public_html/
           remote_host: ${{ secrets.SSH_HOST }}
