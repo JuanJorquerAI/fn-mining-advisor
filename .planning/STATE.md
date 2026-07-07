@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 2 context gathered
-last_updated: "2026-03-17T16:57:08.250Z"
+stopped_at: Phase 2 UI-SPEC approved
+last_updated: "2026-03-18T17:21:34.363Z"
 last_activity: 2026-03-16 — Roadmap created from requirements and research synthesis
 progress:
   total_phases: 6
@@ -78,6 +78,10 @@ Recent decisions affecting current work:
 - [Phase 01-design-system-static-shell]: ES modules pattern established: each behavior in its own file imported by main.js — extensible for future section JS modules
 - [Phase 01-design-system-static-shell]: Phase 1 checkpoint approved by human — all 7 verification checks passed at 320px, 768px, and 1024px viewports
 
+### Roadmap Evolution
+
+- Phase 01.1 inserted after Phase 1: Content & Copy Revision — Real Client Materials (URGENT)
+
 ### Pending Todos
 
 None yet.
@@ -90,6 +94,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-17T16:57:08.246Z
-Stopped at: Phase 2 context gathered
-Resume file: .planning/phases/02-wordpress-backend-setup/02-CONTEXT.md
+Last session: 2026-03-18T17:21:34.360Z
+Stopped at: Phase 2 UI-SPEC approved
+Resume file: .planning/phases/02-wordpress-backend-setup/02-UI-SPEC.md

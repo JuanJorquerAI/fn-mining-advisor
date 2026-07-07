@@ -40,6 +40,16 @@ Plans:
 - [ ] 01-04-PLAN.md — JavaScript modules: header scroll behavior, mobile nav, scroll animations
 - [ ] 01-05-PLAN.md — Human verification checkpoint: all 5 Phase 1 success criteria
 
+### Phase 01.1: Content & Copy Revision — Real Client Materials (INSERTED)
+
+**Goal:** [Urgent work - to be planned]
+**Requirements**: TBD
+**Depends on:** Phase 1
+**Plans:** 0 plans
+
+Plans:
+- [ ] TBD (run /gsd:plan-phase 01.1 to break down)
+
 ### Phase 2: WordPress Backend Setup
 **Goal**: A secured WordPress installation is live with all ACF field groups, custom post types, contact form, and plugins configured — ready to serve real API responses
 **Depends on**: Nothing (parallel with Phase 1)
