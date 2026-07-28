@@ -8,6 +8,10 @@
   background-position: center;
 }
 
+.innovacion-section .section-header h2 {
+  color: var(--color-gold-300);
+}
+
 .innovacion-section__grid {
   /* Inherits .grid-2 from layout.css */
 }
@@ -16,7 +20,7 @@
   font-family: var(--font-heading);
   font-size: 1.25rem;
   font-weight: var(--fw-regular);
-  color: var(--color-white);
+  color: var(--color-gold-300);
   margin-bottom: var(--space-sm);
 }
 

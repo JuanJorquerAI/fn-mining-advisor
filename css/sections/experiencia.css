@@ -252,3 +252,99 @@
   color: var(--color-steel-mid);
   background: var(--color-warm-white);
 }
+
+/* Tarjeta de Habilitación Persona Competente (Comisión Minera) */
+.persona-competente-card {
+  margin-top: var(--space-xl);
+  padding: var(--space-xl);
+  background-color: var(--color-carbon);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(184, 138, 59, 0.3);
+  border-left: 4px solid var(--color-gold-500);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  color: var(--color-white);
+}
+
+.persona-competente-card__header {
+  margin-bottom: var(--space-md);
+}
+
+.persona-competente-card__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  background-color: rgba(184, 138, 59, 0.15);
+  color: var(--color-gold-300);
+  font-size: var(--text-label);
+  font-weight: var(--fw-semibold);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  margin-bottom: var(--space-sm);
+  border: 1px solid rgba(184, 138, 59, 0.25);
+}
+
+.persona-competente-card__title {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-gold-300);
+  margin-bottom: 0.25rem;
+  line-height: var(--lh-heading);
+}
+
+.persona-competente-card__subtitle {
+  font-size: var(--text-label);
+  color: var(--color-steel-mid);
+  margin-bottom: 0;
+}
+
+.persona-competente-card__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: var(--space-md);
+  padding-block: var(--space-md);
+  margin-block: var(--space-md);
+  border-block: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.persona-competente-card__detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.persona-competente-card__detail-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-steel-mid);
+}
+
+.persona-competente-card__detail-val {
+  font-size: var(--text-label);
+  font-weight: var(--fw-semibold);
+  color: var(--color-white);
+}
+
+.persona-competente-card__desc {
+  font-size: var(--text-label);
+  color: #C5CBD3;
+  line-height: var(--lh-body);
+  margin-bottom: var(--space-md);
+}
+
+.persona-competente-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: var(--text-label);
+  font-weight: var(--fw-semibold);
+  color: var(--color-gold-300);
+  text-decoration: none;
+  transition: var(--transition-base);
+}
+
+.persona-competente-card__link:hover {
+  color: var(--color-white);
+  text-decoration: underline;
+}

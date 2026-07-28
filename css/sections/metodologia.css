@@ -17,6 +17,22 @@
   position: relative;
 }
 
+.metodologia-section .section-header h2 {
+  color: var(--color-gold-300);
+  display: inline-block;
+  position: relative;
+  padding-bottom: var(--space-xs);
+}
+
+.metodologia-section .section-header h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--color-gold-500);
+  margin-top: var(--space-xs);
+}
+
 /* Vertical connector line between steps */
 .metodologia-section__steps::before {
   content: '';
@@ -57,7 +73,7 @@
   font-family: var(--font-heading);
   font-size: 3.5rem;    /* 56px — presentational override per UI-SPEC */
   font-weight: var(--fw-regular);
-  color: var(--color-gold-500);
+  color: var(--color-gold-300);
   line-height: 1;
   text-align: center;
   /* Transparent — no solid block on image bg */
@@ -72,7 +88,7 @@
   font-family: var(--font-body);
   font-size: var(--text-body);
   font-weight: var(--fw-semibold);
-  color: var(--color-white);
+  color: var(--color-gold-300);
   margin-bottom: var(--space-sm);
   padding-top: var(--space-md);   /* Align with top of numeral visually */
 }
