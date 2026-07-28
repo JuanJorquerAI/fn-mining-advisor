@@ -26,7 +26,9 @@
   margin-bottom: var(--space-sm);
 }
 
+.innovacion-section .section-header p,
 .innovacion-item p {
-  color: var(--color-steel-mid);
+  color: var(--color-white) !important;
+  opacity: 0.90;
   line-height: var(--lh-body);
 }

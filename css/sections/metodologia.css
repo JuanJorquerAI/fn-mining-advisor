@@ -97,8 +97,10 @@
   padding-top: var(--space-md);   /* Align with top of numeral visually */
 }
 
+.metodologia-section .section-header p,
 .methodology-step__content p {
-  color: var(--color-steel-mid);
+  color: var(--color-white) !important;
+  opacity: 0.90;
   font-size: var(--text-body);
   line-height: var(--lh-body);
 }

@@ -20,7 +20,8 @@
 }
 
 .cta-final-section__content p {
-  color: var(--color-steel-mid);
+  color: var(--color-white);
+  opacity: 0.90;
   font-size: var(--text-body);
   line-height: var(--lh-body);
   margin-bottom: var(--space-2xl);

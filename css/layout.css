@@ -51,7 +51,8 @@ section {
 /* Dark section text override */
 .section--dark .section-header p,
 .section--dark p {
-  color: var(--color-steel-mid);
+  color: var(--color-white);
+  opacity: 0.90;
 }
 
 .section--dark .section-header h2,
