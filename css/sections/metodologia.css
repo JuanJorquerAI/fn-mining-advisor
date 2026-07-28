@@ -17,13 +17,15 @@
   position: relative;
 }
 
+#metodologia .section-header h2,
 .metodologia-section .section-header h2 {
-  color: var(--color-gold-300);
+  color: var(--color-gold-300) !important;
   display: inline-block;
   position: relative;
   padding-bottom: var(--space-xs);
 }
 
+#metodologia .section-header h2::after,
 .metodologia-section .section-header h2::after {
   content: '';
   display: block;
@@ -69,11 +71,12 @@
 }
 
 /* Step number — large Cormorant Garamond decorative numeral */
+#metodologia .methodology-step__number,
 .methodology-step__number {
   font-family: var(--font-heading);
   font-size: 3.5rem;    /* 56px — presentational override per UI-SPEC */
   font-weight: var(--fw-regular);
-  color: var(--color-gold-300);
+  color: var(--color-gold-300) !important;
   line-height: 1;
   text-align: center;
   /* Transparent — no solid block on image bg */
@@ -84,11 +87,12 @@
 }
 
 /* Step title and body */
+#metodologia .methodology-step__content h3,
 .methodology-step__content h3 {
   font-family: var(--font-body);
   font-size: var(--text-body);
   font-weight: var(--fw-semibold);
-  color: var(--color-gold-300);
+  color: var(--color-gold-300) !important;
   margin-bottom: var(--space-sm);
   padding-top: var(--space-md);   /* Align with top of numeral visually */
 }
