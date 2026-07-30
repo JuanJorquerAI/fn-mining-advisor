@@ -205,6 +205,13 @@
   line-height: var(--lh-label);
 }
 
+.cv__tag--highlight {
+  background: rgba(184, 138, 59, 0.15);
+  color: var(--color-gold-600);
+  border: 1px solid var(--color-gold-500);
+  font-weight: var(--fw-semibold);
+}
+
 .cv__training-item {
   font-size: var(--text-label);
   color: var(--color-steel-mid);

@@ -71,6 +71,15 @@
   line-height: var(--lh-heading);
 }
 
+.service-card__tagline {
+  font-family: var(--font-heading);
+  font-size: 1.125rem;
+  font-weight: var(--fw-semibold);
+  color: var(--color-gold-600);
+  margin-bottom: var(--space-md);
+  font-style: italic;
+}
+
 /* Card description paragraph */
 .service-card p {
   font-size: var(--text-body);

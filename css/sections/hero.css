@@ -126,6 +126,29 @@
   font-weight: var(--fw-semibold);
 }
 
+.hero__pain-sub {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--color-steel-mid);
+  margin-top: 0.2rem;
+  font-weight: var(--fw-regular);
+}
+
+.hero__badge-qp {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(197, 160, 89, 0.15);
+  border: 1px solid var(--color-gold-500);
+  color: var(--color-gold-300);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 /* CTA row — horizontal flex, collapses on very small mobile */
 .hero__ctas {
   display: flex;
@@ -141,7 +164,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--space-sm);
+  gap: var(--space-xs);
   font-family: var(--font-body);
   font-size: var(--text-label);   /* 14px */
   font-weight: var(--fw-regular);
