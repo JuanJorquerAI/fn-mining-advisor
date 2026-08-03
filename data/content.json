@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "heading": "Resolvemos sus desafíos mineros y metalúrgicos",
+    "pain_point_1_title": "¿Tiene problemas metalúrgicos?",
+    "pain_point_1_sub": "Disminución de recuperación, minerales refractarios, baja ley, altos costos",
+    "pain_point_2_title": "¿Desea valorizar, vender, arrendar o explotar su mina?",
+    "pain_point_3_title": "¿Quiere reevaluar su planta?",
+    "pain_point_3_sub": "Baja disponibilidad, bajo control metalúrgico, desea aumentar capacidad de tratamiento con bajo capex",
+    "cta_primary": "Solicitar diagnóstico",
+    "cta_secondary": "Ver servicios",
+    "trayectoria_text": "+40 años de experiencia en minería de oro y cobre, Chile y Latinoamérica",
+    "trayectoria_badge": "QP METALURGIA"
+  },
+  "valor": {
+    "heading": "Por qué confiar en nuestra consultoría",
+    "subheading": "Criterio técnico respaldado por experiencia en proyectos de alto impacto en minería de metales y metalurgia extractiva.",
+    "pilar_1_title": "Experiencia técnica verificable",
+    "pilar_1_desc": "Más de cuatro décadas de trabajo directo en plantas metalúrgicas, proyectos de exploración y operaciones en Chile, Argentina, Perú y México. Cada recomendación proviene de experiencia de campo, no de teoría académica.",
+    "pilar_2_title": "Diagnóstico sin compromisos previos",
+    "pilar_2_desc": "La relación comienza con un diagnóstico inicial estructurado: revisamos los antecedentes técnicos bajo NDA estricto y entregamos una primera evaluación de viabilidad antes de formalizar cualquier compromiso económico.",
+    "pilar_3_title": "Independencia y criterio propio",
+    "pilar_3_desc": "Nuestra recomendación es independiente: evaluamos la solución técnica óptima para cada proyecto, no la más conveniente comercialmente para terceros.",
+    "pilar_4_title": "Visión de largo plazo en minería responsable",
+    "pilar_4_desc": "Integramos criterios de sustentabilidad operacional y optimización energética en cada evaluación. Un proyecto técnicamente sólido también considera eficiencia, impacto ambiental y viabilidad de largo plazo, con énfasis en innovación sustentable disruptiva."
+  },
+  "servicios": {
+    "heading": "Servicios de consultoría",
+    "subheading": "Soluciones técnicas especializadas para cada etapa del ciclo minero — desde la evaluación inicial hasta la optimización operacional.",
+    "servicio_1": {
+      "title": "Valorización y Desarrollo de Propiedades Mineras",
+      "tagline": "Conoce el valor de su propiedad minera",
+      "desc": "Acompañamos a propietarios de activos mineros en cada etapa del proceso de valorización: desde el diagnóstico técnico inicial hasta la preparación para venta, asociación o financiamiento.",
+      "foco": "Valorización de propiedades · Adquisición de minas y plantas · Diagnóstico técnico · Estudios de prefactibilidad"
+    },
+    "servicio_2": {
+      "title": "Diagnóstico y Optimización Integral Mina–Planta",
+      "desc": "Diagnóstico técnico-operacional profundo orientado a resultados concretos. Identificar brechas críticas, incrementar producción, reducir costos e integrar mina–planta. Diagnóstico inicial sujeto a NDA.",
+      "foco": "Integración mina–planta · Reducción de costos · Aumento de throughput · Recuperación metalúrgica · Mineralogía compleja · Alto consumo de ácido, cianuro, cal y minerales refractarios"
+    },
+    "servicio_3": {
+      "title": "Clínica Metalúrgica — Asistencia de Emergencia",
+      "desc": "Asistencia técnica inmediata para resolver problemas operacionales críticos: caída de recuperación, fallas en circuitos de lixiviación, flotación o Merrill Crowe. Disponible 24/7 en modalidad remota, presencial o híbrida.",
+      "foco": "Respuesta 24/7 · Diagnóstico de emergencia · Lixiviación · Flotación · Merrill Crowe"
+    },
+    "servicio_4": {
+      "title": "Capacitación Operacional",
+      "desc": "Programas de formación técnica práctica para equipos de operación y supervisión — basados en casos reales de faenas, adaptables a cada operación. Contenidos: flotación, lixiviación, Merrill Crowe, control operacional y seguridad.",
+      "foco": "Formación in-situ · Flotación y lixiviación · Merrill Crowe · Evaluación de competencias"
+    }
+  },
+  "innovacion": {
+    "heading": "Innovación aplicada y minería responsable",
+    "subheading": "No innovación por moda — mejoras técnicas concretas con impacto medible en recuperación, consumo y gestión de riesgos.",
+    "item_1": {
+      "title": "Innovación en procesos extractivos",
+      "desc": "Evaluación e implementación de tecnologías emergentes en conminución de alta presión (HPGR), biohidrometalurgia, flotación columnar y sorter (clasificación automatizada de minerales) — adaptadas a la mineralogía específica de cada yacimiento."
+    },
+    "item_2": {
+      "title": "Optimización energética en planta",
+      "desc": "Diagnóstico y reducción de consumo energético específico en molienda, bombeo y ventilación — áreas que representan hasta el 60% de los costos operacionales en una planta concentradora."
+    },
+    "item_3": {
+      "title": "Estándares internacionales de referencia",
+      "desc": "Aplicación de mejores prácticas reconocidas internacionalmente: JORC Code, NI 43-101, normas ISO para gestión ambiental y guías de la ICMM para minería responsable en Latinoamérica."
+    },
+    "item_4": {
+      "title": "Reducción de impacto ambiental",
+      "desc": "Diseño de circuitos de agua cerrados, gestión técnica de relaves y evaluación de alternativas a reactivos tóxicos — sin comprometer la recuperación metalúrgica."
+    }
+  },
+  "metodologia": {
+    "heading": "Nuestra metodología de trabajo",
+    "subheading": "Estructura clara, confidencialidad garantizada y criterio técnico en cada etapa — desde el primer contacto hasta la entrega del informe final.",
+    "paso_1": {
+      "title": "NDA y acuerdo de confidencialidad",
+      "desc": "Toda relación comercial comienza con la firma de un acuerdo de confidencialidad robusto. La información técnica del proyecto nunca se comparte con terceros ni se utiliza fuera del encargo."
+    },
+    "paso_2": {
+      "title": "Recepción y revisión de antecedentes · Visita a terreno",
+      "desc": "Análisis estructurado de la información técnica disponible y visita a terreno: reportes de exploración, resultados de ensayos metalúrgicos, datos operacionales, informes geológicos y evaluación in situ."
+    },
+    "paso_3": {
+      "title": "Diagnóstico inicial",
+      "desc": "Primera evaluación técnica del proyecto: identificación de brechas, oportunidades y riesgos críticos. Se entrega como documento estructurado para luego definir el alcance completo del trabajo."
+    },
+    "paso_4": {
+      "title": "Propuesta técnica y económica",
+      "desc": "Sobre la base del diagnóstico, se elabora una propuesta de trabajo detallada con alcance, metodología, entregables, plazos y honorarios — sin compromisos implícitos previos."
+    },
+    "paso_5": {
+      "title": "Ejecución y acompañamiento",
+      "desc": "Desarrollo del trabajo con comunicación directa y continua. Los informes son claros, fundamentados y orientados a la toma de decisiones — no documentos de relleno."
+    }
+  },
+  "experiencia": {
+    "heading": "Trayectoria",
+    "lead": "Más de cuatro décadas de trayectoria directa en el sector minero-metalúrgico, con participación en operaciones de oro en Chile, Argentina y México — desde estudios de prefactibilidad hasta comisionamiento, puesta en marcha y operación a escala industrial.",
+    "bio_para_1": "Armando Felipe Núñez Cordero es Ingeniero Civil Químico con especialidad en procesamiento metalúrgico de oro. Ha trabajado con Gold Fields, Yamana Gold, Barrick, Homestake y Codelco en proyectos de referencia internacional: Salares Norte, El Peñón, Minera Florida, Gualcamayo, Mercedes y Agua de la Falda. Los proyectos asociados a su trayectoria representan aproximadamente 17–20 millones de onzas de oro en producción o potencial de desarrollo.",
+    "bio_para_2": "El criterio técnico se ha forjado en la resolución de problemas reales: comisionamiento de plantas en entornos complejos, expansiones de capacidad bajo presión operacional, y proyectos de retratamiento de relaves. No es experiencia de laboratorio — es de terreno, con resultados verificables.",
+    "persona_competente": {
+      "badge": "Certificación Oficial · Reg. N° 541",
+      "title": "Persona Competente en Recursos y Reservas Mineras",
+      "subtitle": "Comisión Calificadora de Competencias en Recursos y Reservas Mineras (Comisión Minera de Chile)",
+      "registro": "N° 541",
+      "profesion": "Ingeniero Civil Químico",
+      "especialidad": "Metalurgia Extractiva",
+      "desc": "La certificación como Persona Competente (PC) en Chile acredita la idoneidad técnica y solvencia profesional bajo normas de clase mundial (compatibles con JORC Code y NI 43-101) para dictaminar sobre procesos metalúrgicos, valorización de propiedades e informes técnicos independientes."
+    }
+  },
+  "cifras": {
+    "heading": "Una trayectoria con resultados verificables",
+    "subheading": "Décadas de experiencia directa en proyectos de oro de escala internacional.",
+    "item_1_val": "+40",
+    "item_1_label": "años en minería metálica internacional",
+    "item_2_val": "9",
+    "item_2_label": "proyectos de referencia con empresas globales",
+    "item_3_val": "~20 Moz",
+    "item_3_label": "de oro en producción o potencial asociado",
+    "item_4_val": "4",
+    "item_4_label": "países: Chile, Argentina, México y Brasil"
+  },
+  "cta_final": {
+    "heading": "¿Tiene un proyecto que requiere criterio técnico senior?",
+    "desc": "El primer paso es un diagnóstico inicial estructurado — sin compromiso de honorarios previo. Revisamos los antecedentes técnicos bajo NDA y le entregamos nuestra evaluación de viabilidad.",
+    "button_primary": "Solicitar diagnóstico inicial",
+    "button_whatsapp": "Consultar por WhatsApp"
+  },
+  "contacto": {
+    "heading": "Póngase en contacto",
+    "subheading": "Respondo personalmente todas las consultas. Si su proyecto requiere confidencialidad estricta, el formulario es la vía más discreta.",
+    "email": "felipe.nunez@nminingc.cl",
+    "telefono": "+56 9 8293 1859",
+    "whatsapp": "+56982931859",
+    "linkedin": "https://www.linkedin.com/in/felipe-nunez-81348433/"
+  }
+}
