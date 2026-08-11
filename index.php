@@ -32,7 +32,7 @@ require_once __DIR__ . '/data/content_helper.php';
     <link rel="stylesheet" href="css/sections/cta-final.css?v=1.2.1" />
     <link rel="stylesheet" href="css/sections/contacto.css?v=1.2.1" />
     <link rel="stylesheet" href="css/header.css?v=1.2.1" />
-    <link rel="stylesheet" href="css/footer.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/footer.css?v=1.2.2" />
   </head>
   <body>
     <!-- ============================================================
@@ -907,6 +907,10 @@ require_once __DIR__ . '/data/content_helper.php';
           </p>
           <p>
             Consultoría técnica independiente en minería y metalurgia — Chile.
+          </p>
+          <p class="site-footer__developer-credit">
+            Diseño y desarrollo web por
+            <a href="https://aplicacionesweb.cl/" rel="noopener">Aplicaciones Web</a>.
           </p>
           <p class="site-footer__photo-credit">
             Fotografías: Diego Delso (CC BY-SA 4.0), Alexander Gerst/ESA (CC

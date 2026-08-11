@@ -84,3 +84,15 @@
 .site-footer__legal p + p {
   margin-top: var(--space-xs);
 }
+
+.site-footer__developer-credit a {
+  color: var(--color-gold-300);
+  font-weight: var(--fw-semibold);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.site-footer__developer-credit a:hover,
+.site-footer__developer-credit a:focus-visible {
+  color: var(--color-white);
+}
