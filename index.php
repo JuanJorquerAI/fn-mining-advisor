@@ -16,23 +16,23 @@ require_once __DIR__ . '/data/content_helper.php';
     </title>
 
     <!-- Design tokens load first — all other CSS depends on these variables -->
-    <link rel="stylesheet" href="css/tokens.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/base.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/layout.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/utilities.css?v=1.2.0" />
+    <link rel="stylesheet" href="css/tokens.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/base.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/layout.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/utilities.css?v=1.2.1" />
 
     <!-- Section CSS -->
-    <link rel="stylesheet" href="css/sections/hero.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/valor.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/servicios.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/innovacion.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/metodologia.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/experiencia.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/insights.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/cta-final.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/sections/contacto.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/header.css?v=1.2.0" />
-    <link rel="stylesheet" href="css/footer.css?v=1.2.0" />
+    <link rel="stylesheet" href="css/sections/hero.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/valor.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/servicios.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/innovacion.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/metodologia.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/experiencia.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/insights.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/cta-final.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/sections/contacto.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/header.css?v=1.2.1" />
+    <link rel="stylesheet" href="css/footer.css?v=1.2.1" />
   </head>
   <body>
     <!-- ============================================================

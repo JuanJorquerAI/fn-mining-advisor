@@ -301,7 +301,7 @@
 
 .persona-competente-card__subtitle {
   font-size: var(--text-label);
-  color: var(--color-steel-mid);
+  color: var(--color-white);
   margin-bottom: 0;
 }
 
@@ -324,7 +324,7 @@
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--color-steel-mid);
+  color: var(--color-white);
 }
 
 .persona-competente-card__detail-val {
@@ -335,7 +335,7 @@
 
 .persona-competente-card__desc {
   font-size: var(--text-label);
-  color: #C5CBD3;
+  color: var(--color-white);
   line-height: var(--lh-body);
   margin-bottom: var(--space-md);
 }

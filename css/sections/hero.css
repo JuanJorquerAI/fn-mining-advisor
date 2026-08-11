@@ -91,7 +91,7 @@
   font-family: var(--font-body);
   font-size: 1.125rem;  /* 18px — slightly larger than body for hero context */
   line-height: var(--lh-body);
-  color: var(--color-steel-mid);
+  color: var(--color-white);
   margin-bottom: var(--space-2xl);
   max-width: 40rem;
   margin-inline: auto;
@@ -129,7 +129,7 @@
 .hero__pain-sub {
   display: block;
   font-size: 0.9375rem;
-  color: var(--color-steel-mid);
+  color: var(--color-white);
   margin-top: 0.2rem;
   font-weight: var(--fw-regular);
 }
@@ -168,7 +168,7 @@
   font-family: var(--font-body);
   font-size: var(--text-label);   /* 14px */
   font-weight: var(--fw-regular);
-  color: var(--color-steel-mid);
+  color: var(--color-white);
   letter-spacing: 0.02em;
 }
 

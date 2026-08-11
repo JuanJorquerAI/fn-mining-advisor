@@ -41,6 +41,6 @@
 .cifra-item__label {
   display: block;
   font-size: var(--text-label);
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--color-white);
   line-height: var(--lh-label);
 }

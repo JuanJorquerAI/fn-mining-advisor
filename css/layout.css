@@ -52,7 +52,7 @@ section {
 .section--dark .section-header p,
 .section--dark p {
   color: var(--color-white);
-  opacity: 0.90;
+  opacity: 1;
 }
 
 .section--dark .section-header h2,
